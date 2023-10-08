@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: 'Onest', sans-serif;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+.page__title {
+  color: var(--color-light);
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: 900;
+  margin-bottom: 55px;
+  max-width: 1055px;
+}

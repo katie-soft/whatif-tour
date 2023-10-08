@@ -1,0 +1,22 @@
+.options {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 13px;
+  background-image: url("../image/options_background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.option-card {
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.option-card__image {
+  max-width: 218px;
+}
