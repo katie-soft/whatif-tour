@@ -1,0 +1,47 @@
+.cities {
+  display: flex;
+  gap: 21px;
+  margin: 75px 0 160px;
+}
+
+.city-card {
+  width: 275px;
+  height: 275px;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: grayscale(1);
+  transition: filter 0.5s;
+  position: relative;
+}
+
+.city-card_moscow {
+  background-image: url("../image/Moscow.png");
+}
+
+.city-card_spb {
+  background-image: url("../image/Moscow.png");
+}
+
+.city-card_telaviv {
+  background-image: url("../image/Moscow.png");
+}
+
+.city-card_barcelona {
+  background-image: url("../image/Moscow.png");
+}
+
+.city-card:hover {
+  filter: grayscale(0);
+}
+
+.city-card__title {
+  text-transform: uppercase;
+  color: var(--color-light);
+  font-size: 24px;
+  font-weight: 900;
+  max-width: 176px;
+  position: absolute;
+  left: 20px;
+  bottom: 16px;
+}

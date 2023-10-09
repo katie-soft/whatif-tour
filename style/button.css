@@ -32,3 +32,18 @@
   background-color: var(--color-secondary);
   color: var(--color-light);
 }
+
+.button_search-icon {
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background-image: url("../image/search_primary.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.button_large {
+  font-size: 18px;
+  padding: 21px 55px;
+}

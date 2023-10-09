@@ -15,6 +15,16 @@
   background-repeat: no-repeat;
 }
 
+.section_options {
+  margin-bottom: 117px;
+}
+
+.section_subscribe {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
 .section-wrapper {
   max-width: 1160px;
   margin: 0 auto;
@@ -31,6 +41,14 @@
   color: var(--color-primary);
 }
 
+.section__title_centered {
+  text-align: center;
+}
+
+.section__title_subscribe {
+  max-width: 500px;
+}
+
 .section__link {
   text-transform: uppercase;
   text-decoration: none;
@@ -45,4 +63,15 @@
 
 .section_options .section__text::before {
   content: url('../image/star.svg');
+}
+
+.section__text {
+  margin: 33px 0 45px;
+  color: var(--color-dark);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.section__image {
+  width: 50%;
 }

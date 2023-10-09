@@ -7,6 +7,7 @@
   background-image: url("../image/options_background.png");
   background-size: contain;
   background-repeat: no-repeat;
+  margin-bottom: 45px;
 }
 
 .option-card {

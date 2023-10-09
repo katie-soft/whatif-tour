@@ -25,7 +25,28 @@
   outline: none;
 }
 
+.search__input_primary {
+  color: var(--color-primary);
+  font-size: 21px;
+  font-weight: 400;
+} 
+
 .search__input::placeholder {
   color: var(--color-light);
   font-family: 'Onest';
+}
+
+.search__input_primary::placeholder {
+  color: var(--color-primary);
+}
+
+.search_transparent {
+  background-color: transparent;
+  color: var(--color-primary);
+  border-radius: 15px;
+  border: 2px solid #58AAA5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 24px;
 }

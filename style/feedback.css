@@ -1,0 +1,37 @@
+.feedback {
+  display: flex;
+  gap: 24px;
+  margin: 83px 0 76px;
+}
+
+.feedback-card {
+  border-radius: 30px;
+  background: #F6F6F6;
+  width: 376px;
+  height: 203px;
+  padding: 13px 23px 23px;
+  position: relative;
+}
+
+.feedback-card__image {
+  position: absolute;
+  left: 32px;
+  top: -32px;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+.feedback-card__name {
+  display: block;
+  margin: 0 0 36px 104px;
+  color: var(--color-dark);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.feedback-card__text {
+  color: var(--color-dark);
+  font-size: 14px;
+  font-weight: 400;
+}
