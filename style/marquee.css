@@ -14,7 +14,10 @@
 }
 
 .marquee__dot {
-  font-weight: 900;
-  font-size: 21px;
-  margin-bottom: 10px;
+  display: inline-block;
+  margin-bottom: 6px;
+  width: 4px;
+  height: 4px;
+  background-color: var(--color-light);
+  border-radius: 50%;
 }
