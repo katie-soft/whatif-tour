@@ -20,15 +20,15 @@
 }
 
 .city-card_spb {
-  background-image: url("../image/Moscow.png");
+  background-image: url("../image/SPb.png");
 }
 
 .city-card_telaviv {
-  background-image: url("../image/Moscow.png");
+  background-image: url("../image/TelAviv.png");
 }
 
 .city-card_barcelona {
-  background-image: url("../image/Moscow.png");
+  background-image: url("../image/Barcelona.png");
 }
 
 .city-card:hover {

@@ -12,11 +12,21 @@
   background-color: var(--color-secondary);
 }
 
+.button_secondary:hover {
+  background-color: var(--color-primary);
+}
+
 .button_light {
   background-color: transparent;
   border: 1px solid var(--color-light);
   font-size: 24px;
   padding: 11px 94px;
+  border-radius: 20px;
+}
+
+.button_light:hover {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
 }
 
 .button_transparent {

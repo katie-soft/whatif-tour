@@ -2,7 +2,7 @@
   background-color: var(--color-primary);
   color: var(--color-light);
   padding: 7px;
-  margin-bottom: 112px;
+  margin: 89px 0 112px;
 }
 
 .marquee__text {

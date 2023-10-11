@@ -54,11 +54,13 @@
 
 .social-link_insta {
   background-image: url("../image/logo_insta.svg");
-  background-position-x: 14px;
+  background-position-x: 13px;
 }
 
 .social-link_whatsapp {
   background-image: url("../image/logo_phone.svg");
+  background-position-x: 14px;
+  background-position-y: 12px;
 }
 
 .footer__nav {
@@ -78,11 +80,15 @@
 .nav__link,
 .docs-list__link {
   text-decoration: none;
-
   color: var(--color-light);
   font-family: Helvetica;
   font-size: 14px;
   font-weight: 400;
+}
+
+.nav__link:hover,
+.docs-list__link:hover {
+  text-decoration: underline;
 }
 
 .nav__link {
