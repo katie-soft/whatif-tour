@@ -21,10 +21,10 @@
 .section_main {
   width: 100%;
   max-width: 100%;
-  height: 800px;
   margin-top: -100px;
   margin-bottom: 0;
   padding-top: 275px;
+  padding-bottom: 64px;
   background: url("../image/line.png") 0px 367px, url("../image/section_background.png");
   background-size: contain, cover;
   background-repeat: no-repeat;
@@ -35,11 +35,12 @@
   background-image: url("../image/line6.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position-y: 45px;
+  background-position-y: 35px;
 }
 
 .section_cards {
   margin-bottom: 0;
+  padding-top: 18px;
 }
 
 .section_feedback {
@@ -56,9 +57,12 @@
 
 .section_subscribe {
   padding-top: 56px;
+  padding-bottom: 100px;
+  margin-bottom: 0;
   background-image: url("../image/line3.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position-y: 22px;
 }
 
 .section__title {
@@ -77,13 +81,7 @@
 }
 
 .section__title_subscribe {
-  max-width: 500px;
-}
-
-.section__title_light-background {
-  display: inline;
-  background-color: var(--color-light);
-  padding-right: 20px;
+  max-width: 540px;
 }
 
 .section__subtitle {
@@ -102,16 +100,22 @@
   color: var(--color-light);
   font-size: 30px;
   font-weight: 900;
+  position: relative;
 }
 
-.section_options .section__text {
-  margin-bottom: 60px;
+.section__link::after {
+  content: ">>";
+  color: var(--color-light);
+  font-size: 30px;
+  font-weight: 900;
+  position: absolute;
+  right: -50px;
+  top: 0;
+  transition: all 1s;
 }
 
-.section_options .section__text::before {
-  content: url('../image/star.svg');
-  display: inline;
-  vertical-align: middle;
+.section__link:hover::after {
+  right: -100px;
 }
 
 .section__text {
@@ -121,11 +125,46 @@
   font-weight: 400;
 }
 
+.section_options .section__text {
+  margin-bottom: 60px;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.section_options .section__text::before {
+  content: url('../image/star.svg');
+  display: inline;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.section_subscribe .section__text {
+  max-width: 420px;
+}
+
+.text_nowrap {
+  white-space: nowrap;
+}
+
+.text_light-background {
+  display: inline-block;
+  background-color: var(--color-light);
+  padding-right: 20px;
+}
+
 .section__image {
   width: 50%;
 }
 
-.section__content {
-  max-width: 540px;
+.section_video .section__content {
+  max-width: 519px;
   margin-top: 70px;
+  position: relative;
+}
+
+.section_video .section__content::after {
+  content: url("../image/arrow_curly.png");
+  position: absolute;
+  bottom: 35px;
+  left: -50px;
 }

@@ -1,7 +1,7 @@
 .cities {
   display: flex;
   gap: 21px;
-  margin: 75px 0 160px;
+  margin: 75px 0 0;
 }
 
 .city-card {

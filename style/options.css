@@ -5,19 +5,28 @@
   align-items: flex-end;
   gap: 13px;
   background-image: url("../image/options_background.png");
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
+  background-position-y: -3px;
   margin-bottom: 45px;
 }
 
 .option-card {
   max-width: 280px;
+  width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 20px;
+
 }
 
 .option-card__image {
   max-width: 218px;
+}
+
+.option-card .button {
+  width: 100%;
+  padding: 20px 50px;
 }
