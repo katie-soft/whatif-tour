@@ -34,7 +34,7 @@
   padding-top: 143px;
   background-image: url("../image/line6.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   background-position-y: 45px;
 }
 
@@ -50,7 +50,7 @@
   padding-top: 46px;
   background-image: url("../image/line5.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   background-position-y: -50px;
 }
 
