@@ -105,19 +105,27 @@
     <main class="page">
       <section class="section section_main">
         <div class="section-wrapper">
-          <h1 class="page__title">Лучшие квест-экскурсии в твоем городе</h1>
-          <div class="search">
-            <div class="search__wrapper">
-              <img class="search__icon" src="./image/search.svg" alt="Search" />
-              <input
-                class="search__input"
-                type="text"
-                placeholder="Куда вы собираетесь?"
-              />
+          <div class="section__content_main">
+            <h1 class="page__title">
+              Лучшие квест-экскурсии в&nbsp;твоем городе
+            </h1>
+            <div class="search">
+              <div class="search__wrapper">
+                <img
+                  class="search__icon"
+                  src="./image/search.svg"
+                  alt="Search"
+                />
+                <input
+                  class="search__input"
+                  type="text"
+                  placeholder="Куда вы собираетесь?"
+                />
+              </div>
+              <button class="button button_light">Найти</button>
             </div>
-            <button class="button button_light">Найти</button>
           </div>
-          <a class="section__link" href="#">Узнать больше</a>
+          <a class="section__link" href="#">Узнать больше >></a>
         </div>
       </section>
       <section class="section section_options">
@@ -130,37 +138,49 @@
           </p>
           <div class="options">
             <div class="option-card">
-              <img
-                class="option-card__image"
-                src="./image/option_guide.png"
-                alt="С гидом"
-              />
+              <div class="option-wrapper">
+                <img
+                  class="option-card__image"
+                  src="./image/option_guide.png"
+                  alt="С гидом"
+                />
+              </div>
+
               <button class="button button_transparent">С гидом</button>
             </div>
             <div class="option-card">
-              <img
-                class="option-card__image"
-                src="./image/option_app.png"
-                alt="В приложении"
-              />
+              <div class="option-wrapper">
+                <img
+                  class="option-card__image"
+                  src="./image/option_app.png"
+                  alt="В приложении"
+                />
+              </div>
+
               <button class="button button_transparent">В приложении</button>
             </div>
             <div class="option-card">
-              <img
-                class="option-card__image"
-                src="./image/option_printable.png"
-                alt="Гайды и printable"
-              />
+              <div class="option-wrapper">
+                <img
+                  class="option-card__image"
+                  src="./image/option_printable.png"
+                  alt="Гайды и printable"
+                />
+              </div>
+
               <button class="button button_transparent">
                 Гайды и printable
               </button>
             </div>
             <div class="option-card">
-              <img
-                class="option-card__image"
-                src="./image/option_requisite.png"
-                alt="С реквизитом"
-              />
+              <div class="option-wrapper">
+                <img
+                  class="option-card__image"
+                  src="./image/option_requisite.png"
+                  alt="С реквизитом"
+                />
+              </div>
+
               <button class="button button_transparent">С реквизитом</button>
             </div>
           </div>
@@ -182,53 +202,57 @@
             >
           </h2>
           <div class="cards">
-            <div class="card">
-              <img
-                class="card__image"
-                src="./image/card_facts.png"
-                alt="Неожиданные факты"
-              />
-              <h3 class="card__title">Неожиданные факты</h3>
-              <p class="card__text">
-                Интересные факты и яркая подача материала. Умно, весело и очень
-                интересно!
-              </p>
+            <div class="card-row">
+              <div class="card">
+                <img
+                  class="card__image"
+                  src="./image/card_facts.png"
+                  alt="Неожиданные факты"
+                />
+                <h3 class="card__title">Неожиданные факты</h3>
+                <p class="card__text">
+                  Интересные факты и яркая подача материала. Умно, весело и
+                  очень интересно!
+                </p>
+              </div>
+              <div class="card">
+                <img
+                  class="card__image"
+                  src="./image/card_story.png"
+                  alt="Увлекательная история"
+                />
+                <h3 class="card__title">Увлекательная история</h3>
+                <p class="card__text">
+                  Вы станете героем приключения, как в книге или фильме, только
+                  по-настоящему.
+                </p>
+              </div>
             </div>
-            <div class="card">
-              <img
-                class="card__image"
-                src="./image/card_story.png"
-                alt="Увлекательная история"
-              />
-              <h3 class="card__title">Увлекательная история</h3>
-              <p class="card__text">
-                Вы станете героем приключения, как в книге или фильме, только
-                по-настоящему.
-              </p>
-            </div>
-            <div class="card">
-              <img
-                class="card__image"
-                src="./image/card_games.png"
-                alt="Классные игры"
-              />
-              <h3 class="card__title">Классные игры</h3>
-              <p class="card__text">
-                Вы не только слушаете, но сами принимаете решения, отвечаете на
-                вопросы, выполняете классные задания. 
-              </p>
-            </div>
-            <div class="card">
-              <img
-                class="card__image"
-                src="./image/card_formats.png"
-                alt="Разные форматы"
-              />
-              <h3 class="card__title">Разные форматы</h3>
-              <p class="card__text">
-                С гидом, в приложении на телефоне, с распечатанными материалами.
-                В музее, по городу или по парку.
-              </p>
+            <div class="card-row">
+              <div class="card">
+                <img
+                  class="card__image"
+                  src="./image/card_games.png"
+                  alt="Классные игры"
+                />
+                <h3 class="card__title">Классные игры</h3>
+                <p class="card__text">
+                  Вы не только слушаете, но сами принимаете решения, отвечаете
+                  на вопросы, выполняете классные задания. 
+                </p>
+              </div>
+              <div class="card">
+                <img
+                  class="card__image"
+                  src="./image/card_formats.png"
+                  alt="Разные форматы"
+                />
+                <h3 class="card__title">Разные форматы</h3>
+                <p class="card__text">
+                  С гидом, в приложении на телефоне, с распечатанными
+                  материалами. В музее, по городу или по парку.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -295,17 +319,21 @@
             Самые популярные<span class="section__title_primary"> города</span>
           </h2>
           <div class="cities">
-            <div class="city-card city-card_moscow">
-              <h3 class="city-card__title">Москва</h3>
+            <div class="cities__row">
+              <div class="city-card city-card_moscow">
+                <h3 class="city-card__title">Москва</h3>
+              </div>
+              <div class="city-card city-card_spb">
+                <h3 class="city-card__title">Санкт-Петербург</h3>
+              </div>
             </div>
-            <div class="city-card city-card_spb">
-              <h3 class="city-card__title">Санкт-Петербург</h3>
-            </div>
-            <div class="city-card city-card_telaviv">
-              <h3 class="city-card__title">Тель-Авив</h3>
-            </div>
-            <div class="city-card city-card_barcelona">
-              <h3 class="city-card__title">Барселона</h3>
+            <div class="cities__row">
+              <div class="city-card city-card_telaviv">
+                <h3 class="city-card__title">Тель-Авив</h3>
+              </div>
+              <div class="city-card city-card_barcelona">
+                <h3 class="city-card__title">Барселона</h3>
+              </div>
             </div>
           </div>
         </div>

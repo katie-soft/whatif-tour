@@ -41,9 +41,21 @@
   }
 }
 
-@media (max-width: 1000px) {
-
+@media (max-width: 950px) {
   .header__user-info {
     display: none;
+  }
+
+  .header__logo {
+    width: 86px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 390px) {
+
+  .header {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }

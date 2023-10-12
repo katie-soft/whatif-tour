@@ -10,3 +10,11 @@
     margin: 0 auto;
   }
 }
+
+@media (max-width: 500px) {
+  .video-wrapper {
+    width: 240px;
+    height: 476px;
+    background-size: cover;
+  }
+}

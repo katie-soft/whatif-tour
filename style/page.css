@@ -30,3 +30,17 @@ h1, h2, h3, h4, p {
     font-size: 55px;
   }
 }
+
+@media (max-width: 950px) {
+  .page__title {
+    font-size: 32px;
+    max-width: 580px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 390px) {
+  .page__title {
+    font-size: 24px;
+  }
+}

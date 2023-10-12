@@ -18,14 +18,71 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
 
+}
+
+.option-wrapper {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  width: 100%;
 }
 
 .option-card__image {
   max-width: 218px;
+  display: block;
+  margin: 0 auto;
 }
 
 .option-card .button {
   width: 100%;
   padding: 20px 0;
+}
+
+
+@media (max-width: 1000px) {
+  .options {
+    background-image: none;
+  }
+
+  .option-card:nth-of-type(1) .option-wrapper {
+    background-image: url("../image/background_option1.png");
+  }
+  .option-card:nth-of-type(2) .option-wrapper {
+    background-image: url("../image/background_option2.png");
+  }
+  .option-card:nth-of-type(3) .option-wrapper {
+    background-image: url("../image/background_option3.png");
+  }
+  .option-card:nth-of-type(4) .option-wrapper {
+    background-image: url("../image/background_option4.png");
+  }
+
+  .option-card__image {
+    width: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  .option-card .button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 750px) {
+
+  .options {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 20px;
+  }
+
+  .option-card {
+    width: 350px;
+  }
 }

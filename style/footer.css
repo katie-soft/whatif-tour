@@ -112,3 +112,39 @@
     gap: 15px;
   }
 }
+
+@media (max-width: 900px) {
+
+  .footer {
+    padding-bottom: 30px;
+  }
+
+  .footer__content {
+    flex-direction: column;
+  }
+
+  .footer__nav {
+    border-bottom: 1px solid var(--color-light);
+    padding-bottom: 45px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .social-wrapper {
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .nav__link,
+  .docs-list__link {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 390px) {
+  .footer {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}

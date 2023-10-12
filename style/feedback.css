@@ -36,3 +36,19 @@
   font-size: 14px;
   font-weight: 400;
 }
+
+@media (max-width: 800px) {
+
+  .feedback {
+    margin-top: 40px;
+  }
+
+  .feedback-card {
+    width: 100%;
+  }
+  
+  .feedback-card:nth-of-type(2),
+  .feedback-card:nth-of-type(3) {
+    display: none;
+  }
+}
