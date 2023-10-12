@@ -52,3 +52,9 @@
   justify-content: space-between;
   padding: 15px 24px;
 }
+
+@media (max-width: 1200px) {
+  .section_main .search__input {
+    font-size: 24px;
+  }
+}

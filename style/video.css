@@ -4,3 +4,9 @@
   background-image: url(../image/video.png);
   margin-left: 105px;
 }
+
+@media (max-width: 1200px) {
+  .video-wrapper {
+    margin: 0 auto;
+  }
+}

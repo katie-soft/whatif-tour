@@ -1,0 +1,134 @@
+.burger {
+  display: none;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.burger__user-icon img {
+  width: 23px;
+  height: 23px;
+}
+
+.burger-icon {
+  width: 29px;
+  height: 16px;
+  margin-top: 3px;
+  background-image: url('../image/burger-icon.svg');
+  cursor: pointer;
+}
+
+.burger-menu {
+  width: 100%;
+  padding: 28px 40px 28px 50px;
+  background-color: var(--color-light);
+  border-radius: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  box-shadow: 0px 3px 10px var(--color-dark);
+  display: none;
+}
+
+.burger-menu_opened {
+  display: block;
+}
+
+.burger-menu__close {
+  cursor: pointer;
+  background-image: url("../image/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 23px;
+  height: 23px;
+  margin-right: -15px;
+}
+
+.burger-menu__user {
+  display: flex;
+  gap: 9px;
+  font-size: 10px;
+  color: var(--color-dark);
+  margin-bottom: 35px;
+}
+
+.user__link {
+  text-decoration: none;
+}
+
+.user__link:hover {
+  text-decoration: underline;
+}
+
+.user__link_singin {
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  font-size: 16px;
+}
+
+.user__link_register {
+  color: var(--color-dark);
+}
+
+.burger-menu__nav {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.burger-menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.burger-menu__list-item {
+  margin-bottom: 20px;
+}
+
+.burger-menu__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-dark);
+  font-size: 13px;
+}
+
+.burger-menu__link:hover {
+  text-decoration: underline;
+}
+
+.burger-menu__social {
+  display: flex;
+  gap: 13px;
+}
+
+.social-link_secondary {
+  background-color: var(--color-secondary);
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-link_telegram_secondary {
+  background-image: url(../image/logo_telegram_secondary.svg);
+  background-position-x: 7px;
+}
+
+.social-link_insta_secondary {
+  background-image: url(../image/logo_insta_secondary.svg);
+  background-position-x: 8px;
+}
+
+.social-link_whatsapp_secondary {
+  background-image: url(../image/logo_whatsapp_secondary.svg);
+  background-position-x: 8px;
+}
+
+@media (max-width: 1000px) {
+  .burger {
+      display: flex;
+    }
+}

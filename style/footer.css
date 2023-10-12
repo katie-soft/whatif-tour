@@ -94,3 +94,21 @@
 .nav__link {
   text-transform: uppercase;
 }
+
+@media (max-width: 1200px) {
+  .footer {
+    padding: 50px 50px 42px 50px;
+  }
+
+  .footer__content {
+    gap: 30px;
+  }
+
+  .social-wrapper {
+    margin-right: 0;
+  }
+
+  .footer__nav {
+    gap: 15px;
+  }
+}

@@ -2,17 +2,21 @@
   display: flex;
   gap: 21px;
   margin: 75px 0 0;
+  height: 275px;
 }
 
 .city-card {
-  width: 275px;
-  height: 275px;
+  width: 25%;
+  height: 100%;
   border-radius: 20px;
   background-repeat: no-repeat;
   background-size: contain;
   filter: grayscale(1);
   transition: filter 0.5s;
-  position: relative;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 .city-card_moscow {
@@ -41,7 +45,10 @@
   font-size: 24px;
   font-weight: 900;
   max-width: 176px;
-  position: absolute;
-  left: 20px;
-  bottom: 16px;
+}
+
+@media (max-width: 1200px) {
+  .cities {
+    height: 220px;
+  }
 }

@@ -5,9 +5,8 @@
   align-items: flex-end;
   gap: 13px;
   background-image: url("../image/options_background.png");
-  background-size: 100%;
+  background-size: 100% 64%;
   background-repeat: no-repeat;
-  background-position-y: -3px;
   margin-bottom: 45px;
 }
 
@@ -28,5 +27,5 @@
 
 .option-card .button {
   width: 100%;
-  padding: 20px 50px;
+  padding: 20px 0;
 }

@@ -21,3 +21,10 @@
   background-color: var(--color-light);
   border-radius: 50%;
 }
+
+@media (max-width: 1200px) {
+  .marquee {
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+}

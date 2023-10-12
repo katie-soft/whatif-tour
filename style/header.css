@@ -32,3 +32,18 @@
   align-items: center;
   gap: 4px;
 }
+
+@media (max-width: 1200px) {
+
+  .header {
+    padding-left: 50px; 
+    padding-right: 50px; 
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .header__user-info {
+    display: none;
+  }
+}

@@ -24,3 +24,9 @@ h1, h2, h3, h4, p {
   margin-bottom: 55px;
   max-width: 1055px;
 }
+
+@media (max-width: 1200px) {
+  .page__title {
+    font-size: 55px;
+  }
+}

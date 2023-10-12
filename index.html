@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="header" id="top">
-      <div class="header__selectors">
+      <div class="header__select">
         <a class="header__logo" href="#">
           <img
             class="header__logo-image"
@@ -30,6 +30,76 @@
           Войти
         </a>
         <button class="button button_secondary">Зарегистрироваться</button>
+      </div>
+      <div class="burger">
+        <a class="burger__user-icon" href="#">
+          <img src="./image/user.svg" alt="User" />
+        </a>
+        <div class="burger-icon" id="burger-icon"></div>
+        <div class="burger-menu" id="burger-menu">
+          <div class="burger-menu__select-wrapper">
+            <div class="burger-menu__select">
+              Русский
+              <img src="./image/arrow-select_secondary.svg" />
+            </div>
+            <div class="burger-menu__select">
+              Рубль
+              <img src="./image/arrow-select_secondary.svg" />
+            </div>
+            <div class="burger-menu__close" id="close-burger"></div>
+          </div>
+          <div class="burger-menu__user">
+            <img src="./image/user_secondary.svg" alt="" />
+            <div>
+              <a class="user__link user__link_singin" href="#">Войти</a>
+              <br />
+              <span
+                >или
+                <a class="user__link user__link_register" href="#"
+                  >зарегистрироваться</a
+                ></span
+              >
+            </div>
+          </div>
+          <nav class="burger-menu__nav">
+            <ul class="burger-menu__list">
+              <li class="burger-menu__list-item">
+                <a class="burger-menu__link" href="#">Что такое квесты</a>
+              </li>
+              <li class="burger-menu__list-item">
+                <a class="burger-menu__link" href="#">Живые квесты</a>
+              </li>
+              <li class="burger-menu__list-item">
+                <a class="burger-menu__link" href="#">Printable квесты</a>
+              </li>
+            </ul>
+            <ul class="burger-menu__list">
+              <li class="burger-menu__list-item">
+                <a class="burger-menu__link" href="#">Квест-приложения</a>
+              </li>
+              <li class="burger-menu__list-item">
+                <a class="burger-menu__link" href="#">Отзывы</a>
+              </li>
+              <li class="burger-menu__list-item">
+                <a class="burger-menu__link" href="#">Блог</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="burger-menu__social">
+            <a
+              class="social-link_secondary social-link_telegram_secondary"
+              href=""
+            ></a>
+            <a
+              class="social-link_secondary social-link_insta_secondary"
+              href=""
+            ></a>
+            <a
+              class="social-link_secondary social-link_whatsapp_secondary"
+              href=""
+            ></a>
+          </div>
+        </div>
       </div>
     </header>
     <main class="page">
@@ -408,5 +478,6 @@
         </div>
       </div>
     </footer>
+    <script src="./script/script.js"></script>
   </body>
 </html>
