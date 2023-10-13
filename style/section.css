@@ -148,6 +148,10 @@
   width: 50%;
 }
 
+.section__image_vertical {
+  display: none;
+}
+
 .section_video .section__content {
   max-width: 519px;
   margin-top: 70px;
@@ -239,10 +243,19 @@
     text-align: left;
   }
 
-  .section-wrapper_subscribe {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
+.section__image {
+  display: none;
+}
+
+.section__image_vertical {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.section_subscribe .section__text {
+  max-width: 100%;
+}
 }
 
 @media (max-width: 500px) {

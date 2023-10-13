@@ -7,10 +7,18 @@
   align-items: center;
 }
 
+.header__select {
+  display: flex;
+  gap: 13px;
+  justify-content: center;
+  align-items: center;
+}
+
 .header__logo {
   display: block;
   width: 148px;
   height: 60px;
+  margin-right: 10px;
 }
 
 .header__logo-image {

@@ -23,6 +23,16 @@
             alt="What If Tour"
           />
         </a>
+        <div class="select-wrapper" id="select-wrapper">
+          <input id="select" type="hidden" name="language" value="" />
+          <span id="select-value">Русский</span>
+          <ul class="custom-select" id="custom-select">
+            <li class="custom-select__option" data-value="ru">Русский</li>
+            <li class="custom-select__option" data-value="en">English</li>
+            <li class="custom-select__option" data-value="es">Espanol</li>
+            <li class="custom-select__option" data-value="is">עברית</li>
+          </ul>
+        </div>
       </div>
       <div class="header__user-info">
         <a class="header__user-link" href="#">
@@ -435,6 +445,11 @@
               <span class="section__title_primary">Хочу узнавать первым</span>
               о новых квестах
             </h2>
+            <img
+              class="section__image_vertical"
+              src="./image/photo_subscribe.png"
+              alt=""
+            />
             <p class="section__text">
               Чтобы узнавать первыми о квест-экскурсиях твоего города.
             </p>

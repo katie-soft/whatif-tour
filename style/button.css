@@ -70,3 +70,10 @@
     background-image: url("../image/search.svg");
   }
 }
+
+@media (max-width: 500px) {
+  .section_subscribe .button_large {
+    font-size: 16px;
+    padding: 20px 30px;
+  }
+}
