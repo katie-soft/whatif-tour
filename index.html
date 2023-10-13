@@ -27,21 +27,31 @@
             alt="What If Tour"
           />
         </a>
-        <div class="select-wrapper" id="select-wrapper">
-          <input id="select" type="hidden" name="language" value="" />
-          <span id="select-value">Русский</span>
-          <ul class="custom-select" id="custom-select">
+        <div class="select-wrapper" id="select-wrapper-language">
+          <input id="select-language" type="hidden" name="language" value="" />
+          <span id="select-value-language">Русский</span>
+          <ul class="custom-select" id="custom-select-language">
             <li class="custom-select__option" data-value="ru">Русский</li>
             <li class="custom-select__option" data-value="en">English</li>
             <li class="custom-select__option" data-value="es">Espanol</li>
             <li class="custom-select__option" data-value="is">עברית</li>
           </ul>
         </div>
+        <div class="select-wrapper" id="select-wrapper-currency">
+          <input id="select-currency" type="hidden" name="currency" value="" />
+          <span id="select-value-currency">Рубль</span>
+          <ul class="custom-select" id="custom-select-currency">
+            <li class="custom-select__option" data-value="rub">Рубль</li>
+            <li class="custom-select__option" data-value="usd">Dollar</li>
+            <li class="custom-select__option" data-value="eur">Euro</li>
+            <li class="custom-select__option" data-value="nis">שקל</li>
+          </ul>
+        </div>
       </div>
       <div class="header__user-info">
         <a class="header__user-link" href="#">
           <img src="./image/user.svg" alt="User" />
-          Войти
+          <span>Войти</span>
         </a>
         <button class="button button_secondary">Зарегистрироваться</button>
       </div>
@@ -51,6 +61,7 @@
         </a>
         <div class="burger-icon" id="burger-icon"></div>
         <div class="burger-menu" id="burger-menu">
+          <div class="burger-menu__close" id="close-burger"></div>
           <div class="burger-menu__select-wrapper">
             <div class="burger-menu__select">
               Русский
@@ -60,7 +71,6 @@
               Рубль
               <img src="./image/arrow-select_secondary.svg" />
             </div>
-            <div class="burger-menu__close" id="close-burger"></div>
           </div>
           <div class="burger-menu__user">
             <img src="./image/user_secondary.svg" alt="" />

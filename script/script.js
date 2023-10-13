@@ -17,30 +17,67 @@ function closeBurgerMenu() {
 
 /* Custom select */
 
-const selectWrapper = document.querySelector('#select-wrapper');
-const optionsList = document.querySelector('#custom-select');
-const selectSpan = document.querySelector('#select-value');
-const selectForSubmit = document.querySelector('#select');
+/* Language */
 
-selectWrapper.addEventListener('click', () => {
-  selectWrapper.classList.toggle('select-wrapper_active');
-  optionsList.classList.toggle('custom-select_active');
+const selectWrapperLanguage = document.querySelector('#select-wrapper-language');
+const optionsListLanguage = document.querySelector('#custom-select-language');
+const selectSpanLanguage = document.querySelector('#select-value-language');
+const selectForSubmitLanguage = document.querySelector('#select-language');
+
+function openSelectLanguage() {
+  selectWrapperLanguage.classList.toggle('select-wrapper_active');
+  optionsListLanguage.classList.toggle('custom-select_active');
+}
+
+function selectOptionLanguage(event) {
+  if (event.target.classList.contains('custom-select__option')) {
+    selectSpanLanguage.innerText = event.target.innerText;
+    selectForSubmitLanguage.value = event.target.dataset.value;
+  }
+}
+
+selectWrapperLanguage.addEventListener('click', (event) => {
+  openSelectLanguage();
 })
 
-optionsList.addEventListener('click', (event) => {
+optionsListLanguage.addEventListener('click', (event) => {
+  selectOptionLanguage(event);
+})
+
+/* Currency */
+
+const selectWrapperCurrency = document.querySelector('#select-wrapper-currency');
+const optionsListCurrency = document.querySelector('#custom-select-currency');
+const selectSpanCurrency = document.querySelector('#select-value-currency');
+const selectForSubmitCurrency = document.querySelector('#select-currency');
+
+function openSelectCurrency() {
+  selectWrapperCurrency.classList.toggle('select-wrapper_active');
+  optionsListCurrency.classList.toggle('custom-select_active');
+}
+
+function selectOptionCurrency(event) {
   if (event.target.classList.contains('custom-select__option')) {
-    selectSpan.innerText = event.target.innerText;
-    selectForSubmit.value = event.target.dataset.value;
+    selectSpanCurrency.innerText = event.target.innerText;
+    selectForSubmitCurrency.value = event.target.dataset.value;
   }
+}
+
+selectWrapperCurrency.addEventListener('click', (event) => {
+  openSelectCurrency();
+})
+
+optionsListCurrency.addEventListener('click', (event) => {
+  selectOptionCurrency(event);
 })
 
 document.addEventListener('click', (event) => {
   if (
-    selectWrapper.classList.contains('form__select-wrapper_active') && 
-    !event.target.parentElement.classList.contains('form__select-wrapper') && 
-    !event.target.classList.contains('form__select-wrapper')) {
-      selectWrapper.classList.remove('form__select-wrapper_active');
-      optionsList.classList.remove('custom-select_active');
+    selectWrapperLanguage.classList.contains('select-wrapper_active') && 
+    !event.target.parentElement.classList.contains('select-wrapper') && 
+    !event.target.classList.contains('select-wrapper')) {
+      selectWrapperLanguage.classList.remove('select-wrapper_active');
+      optionsListLanguage.classList.remove('custom-select_active');
     }
 })
 

@@ -41,7 +41,9 @@
   background-position: center;
   width: 23px;
   height: 23px;
-  margin-right: -15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .burger-menu__user {
@@ -127,7 +129,7 @@
   background-position-x: 8px;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 770px) {
   .burger {
       display: flex;
     }

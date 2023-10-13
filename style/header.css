@@ -49,8 +49,12 @@
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 770px) {
   .header__user-info {
+    display: none;
+  }
+
+  .header__select .select-wrapper {
     display: none;
   }
 
