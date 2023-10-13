@@ -1,16 +1,15 @@
 .feedback {
-  width: 100%;
-  display: flex;
-  gap: 24px;
-  margin: 83px 0 76px;
+  margin: 40px 0 30px;
+  padding-top: 40px;
+  position: relative;
 }
 
 .feedback-card {
   border-radius: 30px;
   background: #F6F6F6;
-  width: 33%;
   min-height: 200px;
   padding: 13px 23px 23px;
+  /* margin-right: 24px; */
   position: relative;
 }
 
@@ -35,6 +34,29 @@
   color: var(--color-dark);
   font-size: 14px;
   font-weight: 400;
+}
+
+.feedback__controls {
+  height: 45px;
+  position: relative;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper-button-prev, .swiper-button-next {
+  background-repeat: no-repeat;
+  top: 50%;
+}
+
+.swiper-button-prev {
+  background-image: url("../image/arrow_prev.svg");
+}
+
+.swiper-button-next {
+  background-image: url("../image/arrow_next.svg");
 }
 
 @media (max-width: 800px) {

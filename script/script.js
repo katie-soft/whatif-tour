@@ -43,3 +43,18 @@ document.addEventListener('click', (event) => {
       optionsList.classList.remove('custom-select_active');
     }
 })
+
+/* Slider */
+
+const swiper = new Swiper('.swiper', {
+  loop: true,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 24
+});
