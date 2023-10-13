@@ -9,7 +9,6 @@
   background: #F6F6F6;
   min-height: 200px;
   padding: 13px 23px 23px;
-  /* margin-right: 24px; */
   position: relative;
 }
 
@@ -57,20 +56,4 @@
 
 .swiper-button-next {
   background-image: url("../image/arrow_next.svg");
-}
-
-@media (max-width: 800px) {
-
-  .feedback {
-    margin-top: 40px;
-  }
-
-  .feedback-card {
-    width: 100%;
-  }
-  
-  .feedback-card:nth-of-type(2),
-  .feedback-card:nth-of-type(3) {
-    display: none;
-  }
 }

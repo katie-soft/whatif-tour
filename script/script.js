@@ -44,17 +44,28 @@ document.addEventListener('click', (event) => {
     }
 })
 
-/* Slider */
+/* Slider for feedback */
 
-const swiper = new Swiper('.swiper', {
+const feedbackSlider = new Swiper('.feedback-swiper', {
   loop: true,
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.feedback__controls .swiper-button-next',
+    prevEl: '.feedback__controls .swiper-button-prev',
   },
 
   slidesPerView: 3,
   slidesPerGroup: 3,
   spaceBetween: 24
+});
+
+/* Slider for videp */
+
+const videoSlider = new Swiper('.video-swiper', {
+    slidesPerView: 1,
+    
+    pagination: {
+        el: '.video-swiper__pagination.swiper-pagination',
+        clickable: true
+    },
 });
