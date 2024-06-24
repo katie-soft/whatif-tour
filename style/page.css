@@ -25,6 +25,14 @@ h1, h2, h3, h4, p {
   max-width: 1055px;
 }
 
+.product-page__title {
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 33px;
+}
+
 /* Slider controls */
 
 .swiper-button-next::after,

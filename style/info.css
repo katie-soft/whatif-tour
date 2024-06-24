@@ -1,0 +1,80 @@
+.tag {
+  display: flex;
+  gap: 6px;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.section_info__form {
+  background-color: var(--color-primary);
+  border-radius: 20px;
+  min-width: 356px;
+}
+
+.section_additional-info .section__title {
+  margin-bottom: 50px;
+}
+
+.info-card {
+  margin-bottom: 75px;
+}
+
+.info-card__title {
+  margin-bottom: 25px;
+  color: var(--color-primary);
+  font-size: 30px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.info-card__title::before {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.info-card:nth-of-type(1) .info-card__title::before {
+  content: url('../image/map-icon.svg');
+  width: 42px;
+  height: 40px;
+}
+
+.info-card:nth-of-type(2) .info-card__title::before {
+  content: url('../image/plus-icon_transparent.svg');
+  width: 32px;
+  height: 32px;
+}
+
+.info-card:nth-of-type(3) .info-card__title::before {
+  content: url('../image/tag-icon_transparent.svg');
+  width: 38px;
+  height: 38px;
+}
+
+.info-card:nth-of-type(4) .info-card__title::before {
+  content: url('../image/chat-icon.svg');
+  width: 35px;
+  height: 32px;
+}
+
+.info-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+.info-card__item::before {
+  content: url('../image/cross-icon.svg');
+  margin-right: 14px;
+  display: inline;
+  vertical-align: middle;
+}
+
+.info-card__item_checked::before {
+  content: url('../image/check-icon.svg');
+}
+
+.info-card__item_checked {
+
+}

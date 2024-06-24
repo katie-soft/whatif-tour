@@ -1,0 +1,70 @@
+.guide-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.guide-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.guide-card__title {
+  color: var(--color-primary);
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.guide-card__subtitle {
+  color: grey;
+  font-size: 16px;
+}
+
+.guide-card__rating {
+  color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.guide-card__content {
+  max-width: 650px;
+}
+
+.guide-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.guide-card__link_transparent {
+  color: var(--color-primary);
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+.guide-card__link_transparent:hover {
+  color: var(--color-secondary);
+}
+
+.guide-card__link_primary {
+  color: var(--color-light);
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: var(--color-primary);
+  padding: 15px;
+  min-width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 12px;
+  transition: all 0.3s;
+}
+
+.guide-card__link_primary:hover {
+  background-color: var(--color-secondary);
+}

@@ -33,6 +33,11 @@
   font-weight: 400;
 } 
 
+.section_search .search__input_primary {
+  font-size: 30px;
+  font-weight: 500;
+}
+
 .search__input::placeholder {
   color: var(--color-light);
   font-family: 'Onest';
@@ -51,6 +56,13 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px 24px;
+}
+
+.section_search .search {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid #58AAA5;
+  margin-bottom: 0;
 }
 
 @media (max-width: 1200px) {
