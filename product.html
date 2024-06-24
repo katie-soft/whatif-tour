@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Живые квест-экскурсии</title>
+    <link rel="icon" href="./image/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;900&family=Source+Code+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+    <body>
+      <header class="header header_primary" id="top">
+        <div class="header__select">
+          <a class="header__logo" href="#">
+            <img
+              class="header__logo-image"
+              src="./image/logo.png"
+              alt="What If Tour"
+            />
+          </a>
+          <div class="select-wrapper" id="select-wrapper-language">
+            <input id="select-language" type="hidden" name="language" value="" />
+            <span id="select-value-language">Русский</span>
+            <ul class="custom-select" id="custom-select-language">
+              <li class="custom-select__option" data-value="ru">Русский</li>
+              <li class="custom-select__option" data-value="en">English</li>
+              <li class="custom-select__option" data-value="es">Espanol</li>
+              <li class="custom-select__option" data-value="is">עברית</li>
+            </ul>
+          </div>
+          <div class="select-wrapper" id="select-wrapper-currency">
+            <input id="select-currency" type="hidden" name="currency" value="" />
+            <span id="select-value-currency">Рубль</span>
+            <ul class="custom-select" id="custom-select-currency">
+              <li class="custom-select__option" data-value="rub">Рубль</li>
+              <li class="custom-select__option" data-value="usd">Dollar</li>
+              <li class="custom-select__option" data-value="eur">Euro</li>
+              <li class="custom-select__option" data-value="nis">שקל</li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__user-info">
+          <a class="header__user-link" href="#">
+            <img src="./image/user.svg" alt="User" />
+            <span>Войти</span>
+          </a>
+          <button class="button button_secondary">Зарегистрироваться</button>
+        </div>
+        <div class="burger">
+          <a class="burger__user-icon" href="#">
+            <img src="./image/user.svg" alt="User" />
+          </a>
+          <div class="burger-icon" id="burger-icon"></div>
+          <div class="burger-menu" id="burger-menu">
+            <div class="burger-menu__close" id="close-burger"></div>
+            <div class="burger-menu__select-wrapper">
+              <div class="burger-menu__select">
+                Русский
+                <img src="./image/arrow-select_secondary.svg" />
+              </div>
+              <div class="burger-menu__select">
+                Рубль
+                <img src="./image/arrow-select_secondary.svg" />
+              </div>
+            </div>
+            <div class="burger-menu__user">
+              <img src="./image/user_secondary.svg" alt="" />
+              <div>
+                <a class="user__link user__link_singin" href="#">Войти</a>
+                <br />
+                <span
+                  >или
+                  <a class="user__link user__link_register" href="#"
+                    >зарегистрироваться</a
+                  ></span
+                >
+              </div>
+            </div>
+            <nav class="burger-menu__nav">
+              <ul class="burger-menu__list">
+                <li class="burger-menu__list-item">
+                  <a class="burger-menu__link" href="#">Что такое квесты</a>
+                </li>
+                <li class="burger-menu__list-item">
+                  <a class="burger-menu__link" href="#">Живые квесты</a>
+                </li>
+                <li class="burger-menu__list-item">
+                  <a class="burger-menu__link" href="#">Printable квесты</a>
+                </li>
+              </ul>
+              <ul class="burger-menu__list">
+                <li class="burger-menu__list-item">
+                  <a class="burger-menu__link" href="#">Квест-приложения</a>
+                </li>
+                <li class="burger-menu__list-item">
+                  <a class="burger-menu__link" href="#">Отзывы</a>
+                </li>
+                <li class="burger-menu__list-item">
+                  <a class="burger-menu__link" href="#">Блог</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="burger-menu__social">
+              <a
+                class="social-link_secondary social-link_telegram_secondary"
+                href=""
+              ></a>
+              <a
+                class="social-link_secondary social-link_insta_secondary"
+                href=""
+              ></a>
+              <a
+                class="social-link_secondary social-link_whatsapp_secondary"
+                href=""
+              ></a>
+            </div>
+          </div>
+        </div>
+      </header>
+    <main>Main</main>
+        <footer class="footer">
+      <div class="footer-wrapper">
+        <a class="link-up" href="#top">
+          <img class="link-up__image" src="./image/arrow_up.svg" />
+          Наверх
+        </a>
+        <div class="footer__content">
+          <div class="social-wrapper">
+            <a class="social-link social-link_telegram" href=""></a>
+            <a class="social-link social-link_insta" href=""></a>
+            <a class="social-link social-link_whatsapp" href=""></a>
+          </div>
+          <nav class="footer__nav">
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Выбрать квест</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Что такое квесты</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Блог</a>
+              </li>
+            </ul>
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Отзывы</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Живые квесты</a>
+              </li>
+            </ul>
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Printable квесты</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Квест-приложения</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__docs">
+            <ul class="docs-list">
+              <li class="docs-list__item">
+                <a class="docs-list__link" href="#"
+                  >Политика конфиденциальности</a
+                >
+              </li>
+              <li class="docs-list__item">
+                <a class="docs-list__link" href="#">Договор оферта</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./script/script.js"></script>
+    </body>
+  </html>

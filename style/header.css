@@ -7,6 +7,12 @@
   align-items: center;
 }
 
+.header_primary {
+  background-color: var(--color-primary);
+  border-radius: 25px;
+  padding: 10px 35px 10px 43px;
+}
+
 .header__select {
   display: flex;
   gap: 13px;
@@ -19,6 +25,11 @@
   width: 148px;
   height: 60px;
   margin-right: 10px;
+}
+
+.header_primary .header__logo {
+  max-width: 126px;
+  max-height: 50px;
 }
 
 .header__logo-image {
