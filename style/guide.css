@@ -1,6 +1,7 @@
 .guide-card {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 50px;
 }
 
@@ -67,4 +68,29 @@
 
 .guide-card__link_primary:hover {
   background-color: var(--color-secondary);
+}
+
+@media (max-width: 1200px) {
+
+  .guide-card__header {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 1100px) {
+
+  .guide-card__footer {
+    flex-direction: column;
+    gap: 45px;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .guide-card {
+    flex-direction: column;
+    gap: 25px;
+  }
 }

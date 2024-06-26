@@ -66,3 +66,36 @@
   display: flex;
   gap: 14px;
 }
+
+.video-link_primary {
+  max-width: none;
+  background-color: #95C9C5;
+  border-radius: 20px;
+  color: var(--color-light);
+  align-items: center;
+  padding: 8px 14px;
+  bottom: 5px;
+  font-size: 12px;
+}
+
+.video-link_primary img {
+  width: 22px;
+}
+
+.city-photos__gallery {
+  display: none;
+  position: relative;
+}
+
+@media (max-width: 770px) {
+
+  .city-photos {
+    display: none;
+  }
+
+  .city-photos__gallery {
+    display: block;
+  }
+}
+
+

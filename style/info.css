@@ -76,6 +76,26 @@
   content: url('../image/check-icon.svg');
 }
 
-.info-card__item_checked {
 
+@media (max-width: 500px) {
+
+  .tag {
+    font-size: 16px;
+  }
+
+  .section_additional-info .section__title {
+    margin-bottom: 30px;
+  }
+
+  .info-card {
+    margin-bottom: 43px;
+  }
+
+  .info-card__title {
+    font-size: 18px;
+  }
+
+  .info-card__item {
+    font-size: 14px;
+  }
 }

@@ -111,11 +111,19 @@
     color: var(--color-light);
     font-size: 16px;
   }
+
+  .section_search .search__input_primary,
+  .section_search .search__input_primary::placeholder {
+    color: var(--color-primary);
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 390px) {
 
-  .section_main .search__input {
+  .section_main .search__input,
+  .section_search .search__input_primary,
+  .section_search .search__input_primary::placeholder {
     font-size: 14px;
   }
 }

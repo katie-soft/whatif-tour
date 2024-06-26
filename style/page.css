@@ -66,6 +66,10 @@ h1, h2, h3, h4, p {
     max-width: 580px;
     margin-bottom: 25px;
   }
+
+  .product-page__title {
+    font-size: 27px;
+  }
 }
 
 @media (max-width: 390px) {
