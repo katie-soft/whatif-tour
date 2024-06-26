@@ -2,12 +2,20 @@
   background-color: var(--color-primary);
   padding: 40px 0;
   margin-bottom: 60px;
+  background-image: url('../image/line7.png');
+  background-repeat: no-repeat;
+  background-position-x: 656px;
+  background-position-y: -54px;
 }
 
 .offers__header h2, 
 .offers__header span,
 .offers__header a {
   color: var(--color-light);
+}
+
+.offers__header h2 {
+  margin-bottom: 10px;
 }
 
 .offer-cards {

@@ -11,6 +11,7 @@
   background-color: var(--color-primary);
   border-radius: 25px;
   padding: 10px 35px 10px 43px;
+  margin-top: 25px;
 }
 
 .header__select {

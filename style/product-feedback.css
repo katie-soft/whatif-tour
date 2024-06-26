@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-bottom: 50px;
 }
 
 .product-feedback__card {
@@ -22,9 +23,34 @@
   margin-bottom: 20px;
 }
 
+.product-feedback__rating svg {
+  color: #BCBCBC;
+}
+
+.product-feedback__rating_5 svg:nth-child(1), 
+.product-feedback__rating_5 svg:nth-child(2),
+.product-feedback__rating_5 svg:nth-child(3),
+.product-feedback__rating_5 svg:nth-child(4),
+.product-feedback__rating_5 svg:nth-child(5),
+.product-feedback__rating_4 svg:nth-child(1),
+.product-feedback__rating_4 svg:nth-child(2),
+.product-feedback__rating_4 svg:nth-child(3),
+.product-feedback__rating_4 svg:nth-child(4),
+.product-feedback__rating_3 svg:nth-child(1),
+.product-feedback__rating_3 svg:nth-child(2),
+.product-feedback__rating_3 svg:nth-child(3),
+.product-feedback__rating_2 svg:nth-child(1),
+.product-feedback__rating_2 svg:nth-child(2),
+.product-feedback__rating_1 svg:nth-child(1) {
+  color: var(--color-primary);
+}
+
+.product-feedback__user {
+    margin-bottom: 17px;
+}
+
 .product-feedback__image {
   display: inline-block;
-  margin-bottom: 17px;
   border-radius: 50%;
   height: 61px;
   width: 61px;
