@@ -94,3 +94,22 @@
     gap: 25px;
   }
 }
+
+@media (max-width: 500px) {
+
+  .guide-card__img {
+    width: 100%;
+  }
+
+  .guide-card__title {
+    font-size: 27px;
+  }
+
+  .guide-card .section__text {
+    font-size: 14px;
+  }
+
+  .guide-card__link_primary {
+    min-width: 100%;
+  }
+}

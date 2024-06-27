@@ -25,7 +25,6 @@
 
 .offer-card {
   width: 274px;
-  
 }
 
 .offer-card__image {
@@ -57,5 +56,26 @@
 .offer-card__rating::before {
   content: url('../image/star-icon.svg');
   margin-right: 3px;
+}
+
+@media (max-width: 900px) {
+
+  .offer-cards {
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .offer-card {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .offer-card {
+    min-width: 100%;
+  }
 }
 

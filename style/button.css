@@ -107,4 +107,16 @@
   .button_more {
     font-size: 16px;
   }
+
+  .section_product-feedback .button_transparent {
+    font-size: 16px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .button_max-width {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

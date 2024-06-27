@@ -286,6 +286,11 @@
     margin-top: 27px;
     margin-bottom: 32px;
   }
+
+  .section-wrapper_city-photos {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -348,7 +353,7 @@
     margin-bottom: 50px;
   }
 
-  .section-wrapper {
+  .section-wrapper:not(.section-wrapper_city-photos) {
     padding-right: 25px;
     padding-left: 25px;
   }

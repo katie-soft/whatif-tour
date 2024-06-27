@@ -61,4 +61,45 @@
   display: inline-block;
   margin-left: 20px;
 }
-.product-feedback__text {}
+
+
+@media (max-width: 1100px) {
+
+  .product-feedback__header {
+    flex-direction: column;
+    margin-bottom: 55px;
+  }
+
+  .product-feedback__title {
+    margin-bottom: 40px;
+  }
+
+  .product-feedback__card {
+    margin-bottom: 25px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 23px 20px 26px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .product-feedback__header .section__text {
+    font-size: 14px;
+  }
+
+  .product-feedback__text {
+    font-size: 12px;
+  }
+
+  .product-feedback__card {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .product-feedback__image {
+    width: 52px;
+    height: 52px;
+  }
+}
+

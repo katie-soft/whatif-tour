@@ -98,4 +98,8 @@
   .info-card__item {
     font-size: 14px;
   }
+
+  .section_info__form {
+    min-width: 100%;
+  }
 }
