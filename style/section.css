@@ -181,6 +181,7 @@
 .section_info .section-wrapper {
   display: flex;
   gap: 120px;
+  align-items: flex-start;
 }
 
 @media (max-width: 1330px) {

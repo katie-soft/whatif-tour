@@ -6,9 +6,63 @@
 }
 
 .section_info__form {
-  background-color: var(--color-primary);
+  background-image: url('../image/form-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 20px;
   min-width: 356px;
+  padding: 28px 24px 28px 33px;
+}
+
+.section_info__form .form__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+.section_info__form .form__title {
+  color: var(--color-light);
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.section_info__form .form__rating {
+  color: var(--color-light);
+  font-size: 14px;
+}
+
+.section_info__form .form__rating::before {
+  content: url('../image/star_light.svg');
+  margin-right: 5px;
+}
+
+.section_info__form .form__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 33px;
+  margin-bottom: 27px;
+}
+
+.section_info__form .form__label {
+  color: var(--color-light);
+  font-size: 13px;
+}
+
+.section_info__form .form__price {
+  color: var(--color-light);
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.section_info__form .form__price span:last-child {
+  font-size: 36px;
+  font-weight: 700;
 }
 
 .section_additional-info .section__title {
