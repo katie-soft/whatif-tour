@@ -189,3 +189,45 @@ const cityPhotosSlider = new Swiper('.city-photos-swiper', {
     prevEl: '.city-photos__controls .swiper-button-prev',
   },
 });
+
+/* Modal with feedback form */
+
+const feedbackModal = document.querySelector('#feedback-modal');
+const feedbackModalOpenButton = document.querySelector('#feedback-open-button');
+const feedbackModalCloseButton = feedbackModal.querySelector('#feedback-close-button');
+const fileInput = feedbackModal.querySelector('.feedback-form__file');
+const fileList = feedbackModal.querySelector('.feedback-form__uploaded-files');
+
+feedbackModalOpenButton.addEventListener('click', () => feedbackModal.showModal());
+feedbackModalCloseButton.addEventListener('click', () => feedbackModal.close());
+
+fileInput.addEventListener('change', () => {
+  fileList.innerHTML = '';
+
+  const files = Array.from(fileInput.files);
+  files.forEach(file => {
+    const listItem = document.createElement('li');
+    listItem.textContent = file.name;
+    fileList.append(listItem);
+  })
+  
+})
+
+/* Feedback form */
+
+const feedbackForm = document.getElementById('feedback-form');
+const feedbackFormSubmitButton = document.querySelector("#feedback-submit");
+
+function handleFeedbackFormSubmit() {
+  const data = new FormData(feedbackForm);
+  console.log(Array.from(data.entries()));
+  return data;
+}
+
+feedbackForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  handleFeedbackFormSubmit();
+  feedbackModal.close();
+  feedbackForm.reset();
+  fileList.innerHTML = '';
+});

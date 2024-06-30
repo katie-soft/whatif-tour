@@ -99,6 +99,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  display: none;
 }
 
 .city-photos__control {
@@ -118,8 +119,9 @@
     display: none;
   }
 
-  .city-photos__gallery {
-    display: block;
+  .city-photos__gallery,
+  .city-photos__controls {
+    display: flex;
   }
 }
 

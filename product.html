@@ -320,7 +320,7 @@
                 <h2 class="section__title">Отзывы <span class="section__title_primary">клиентов</span></h2>
                 <p class="section__text">Отзывы наших клиентов о квест-экскурсиях, наших экскурсоводах. Спасибо, что делитесь своими впечатлениями. Если вы еще не оставили свой отзыв, вы можете это сделать, нажав кнопку ниже.</p>
               </div>
-              <button class="button button_transparent">Оставить отзыв</button>
+              <button class="button button_transparent" id="feedback-open-button">Оставить отзыв</button>
             </div>
             <div class="product-feedback__card">
               <div class="product-feedback__rating product-feedback__rating_5">
@@ -507,6 +507,39 @@
           </div>
         </div>
       </footer>
+      <dialog class="modal modal_feedback" id="feedback-modal">
+        <button class="button button_close" id="feedback-close-button"></button>
+        <h3 class="modal_feedback__title">Оставить отзыв</h3>
+        <form class="feedback-form" id="feedback-form">
+          <div class="feedback-form__rating-wrapper" id="feedback-form-rating">
+            <label for="rating-1" class="feedback-form__rating-label">
+              <input type="radio" class="feedback-form__rating" name="rating" id="rating-1" value="1">
+            </label>            
+            <label for="rating-2" class="feedback-form__rating-label">
+              <input type="radio" class="feedback-form__rating" name="rating" id="rating-2" value="2">
+            </label>
+            <label for="rating-3" class="feedback-form__rating-label">
+              <input type="radio" class="feedback-form__rating" name="rating" id="rating-3" value="3">
+            </label>
+            <label for="rating-4" class="feedback-form__rating-label">
+              <input type="radio" class="feedback-form__rating" name="rating" id="rating-4" value="4">
+            </label>
+            <label for="rating-5" class="feedback-form__rating-label">
+              <input type="radio" class="feedback-form__rating" name="rating" id="rating-5" value="5">
+            </label>        
+          </div>          
+          <textarea name="feedback" id="feedback-form-text" class="feedback-form__text" placeholder="Напишите свой отзыв" required></textarea>
+          <label for="image" class="feedback-form__image">
+            <span class="label-header">
+              <img src="./image/camera-icon.svg">
+              Добавить фото
+            </span>
+            <input type="file" class="feedback-form__file" accept="image/*" name="image" multiple>
+            <ul class="feedback-form__uploaded-files"></ul>
+          </label>          
+          <button type="submit" class="button button_secondary" id="feedback-submit">Отправить отзыв</button>
+        </form>
+      </dialog> 
       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
       <script src="./script/script.js"></script>
     </body>
