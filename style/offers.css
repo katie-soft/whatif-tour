@@ -60,6 +60,12 @@
 
 @media (max-width: 900px) {
 
+  .offers__header {
+      background-size: contain;
+      background-position-x: left;
+      background-position-y: top;
+  }
+
   .offer-cards {
     margin-left: auto;
     margin-right: auto;
@@ -73,6 +79,10 @@
 }
 
 @media (max-width: 400px) {
+
+  .offers__header {
+    background-position-y: 50px;
+  }
 
   .offer-card {
     min-width: 100%;
