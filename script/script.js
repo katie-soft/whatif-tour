@@ -150,3 +150,29 @@ const cardSlider = new Swiper('.cards-swiper', {
     prevEl: '.cards__controls .swiper-button-prev',
   },
 });
+
+/* Show more button */
+
+const showMoreButton = document.querySelector('#button-more');
+const additionalInfoBlock = document.querySelector('#additional-info');
+const plusIcon = showMoreButton.querySelectorAll('img')[0];
+const minusIcon = showMoreButton.querySelectorAll('img')[1];
+const buttonText = showMoreButton.querySelector('#button-text');
+
+function showMore() {
+  additionalInfoBlock.classList.add('visible');
+  plusIcon.style.display = 'none';
+  minusIcon.style.display = 'block';
+  buttonText.innerText = 'Скрыть';
+}
+
+function hideMore() {
+  additionalInfoBlock.classList.remove('visible');
+  plusIcon.style.display = 'block';
+  minusIcon.style.display = 'none';
+  buttonText.innerText = 'Узнать больше';
+}
+
+showMoreButton.addEventListener('click', () => {
+  additionalInfoBlock.classList.contains('visible') ? hideMore() : showMore();
+});

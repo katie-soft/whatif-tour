@@ -74,6 +74,10 @@
   max-width: 750px;
 }
 
+.info-card:last-child {
+  margin-bottom: 25px;
+}
+
 .info-card__title {
   margin-bottom: 25px;
   color: var(--color-primary);

@@ -182,18 +182,47 @@
         </section>
         <section class="section section_info">
           <div class="section-wrapper">
-            <div class="section_info__content">
-              <span class="tag">
-                <img src="./image/tag-icon.svg">
-              Израиль, Тель-Авив
-              </span>
-              <h1 class="product-page__title">Квест-экскурсия <span class="section__title_primary">по Тель-Авиву</span></h1>
-              <p class="section__text section__text_info">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
-              <p class="section__text section__text_info">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour.</p>
-              <button class="button button_more">
-                <img src="./image/plus-icon.svg" alt="+">
-                Узнать больше
-              </button>
+            <div>
+              <div class="section_info__content">
+                <span class="tag">
+                  <img src="./image/tag-icon.svg">
+                Израиль, Тель-Авив
+                </span>
+                <h1 class="product-page__title">Квест-экскурсия по&nbsp;<span class="section__title_primary">Тель-Авиву</span></h1>
+                <p class="section__text section__text-info">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+                <p class="section__text section__text-info">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour.</p>
+                <button class="button button_more" id="button-more">
+                  <img src="./image/plus-icon.svg" alt="+">
+                  <img src="./image/minus-icon.svg" alt="-">
+                  <span id="button-text">Узнать больше</span>
+                </button>
+              </div>
+              <section class="section section_additional-info" id="additional-info">
+                <div class="section-wrapper">
+                  <h2 class="section__title">Что вас <span class="section__title_primary">ожидает</span></h2>
+                  <div class="info-card">
+                    <h3 class="info-card__title">О приключении</h3>
+                    <p class="section__text section__text-info">На экскурсии вы услышите то, что точно не найти в интернете. Все о строительстве комплекса и том, как устроены небоскребы снаружи и внутри и как они функционируют. Вы узнаете, как выглядела эта территория раньше, каким должен был быть комплекс, когда его проектировали, и что пошло не по плану.</p>
+                    <p class="section__text section__text-info">Посмотрим, как будет выглядеть Москва-Сити в окончательном варианте и как будет развиваться пространство вокруг. Поговорим и об особенностях каждой башни: в каких архитектурных стилях построены башни, какие мировые рекорды установили при строительстве, какие современные инновации были использованы и насколько башни Сити похожи на небоскребы, которые строятся в мире и чем отличаются.</p>
+                  </div>
+                  <div class="info-card">
+                    <h3 class="info-card__title">В приключение включено</h3>
+                    <p class="section__text section__text-info">Мы обойдем абсолютно все небоскребы. Половину экскурсии мы проведем внутри башен. Заглянем в подземные переходы, увидим современные арт объекты. Вы узнаете, почему макет башни Татлина установили в Городе Столиц, в какой башне на высоте 61 этажа находится бассейн, какое участие принимал в строительстве комплекса самаркандский художник Юнус Сафардиар и многое другое. А еще вы узнаете, кто покупает апартаменты в Москва-Сити и как здесь живется.</p>
+                  </div>
+                  <div class="info-card">
+                    <h3 class="info-card__title">Место встречи</h3>
+                    <p class="section__text section__text-info">Начало экскурсии у моста Багратион. Точное место встречи вы узнаете сразу после бронирования.</p>
+                  </div>
+                  <div class="info-card">
+                    <h3 class="info-card__title">Полезные подсказки</h3>
+                    <ul class="info-card__list">
+                      <li class="info-card__item info-card__item_checked">Прогулочный тур</li>
+                      <li class="info-card__item info-card__item_checked">Туристический гид</li>
+                      <li class="info-card__item">Еда или напитки</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
             </div>
             <div class="section_info__form">
               <div class="form__header">
@@ -234,32 +263,6 @@
                 </div>
                 <button class="button button_secondary button_max-width">Забронировать</button>
               </form>
-            </div>
-          </div>
-        </section>
-        <section class="section section_additional-info">
-          <div class="section-wrapper">
-            <h2 class="section__title">Что вас <span class="section__title_primary">ожидает</span></h2>
-            <div class="info-card">
-              <h3 class="info-card__title">О приключении</h3>
-              <p class="section__text section__text-info">На экскурсии вы услышите то, что точно не найти в интернете. Все о строительстве комплекса и том, как устроены небоскребы снаружи и внутри и как они функционируют. Вы узнаете, как выглядела эта территория раньше, каким должен был быть комплекс, когда его проектировали, и что пошло не по плану.</p>
-              <p class="section__text section__text-info">Посмотрим, как будет выглядеть Москва-Сити в окончательном варианте и как будет развиваться пространство вокруг. Поговорим и об особенностях каждой башни: в каких архитектурных стилях построены башни, какие мировые рекорды установили при строительстве, какие современные инновации были использованы и насколько башни Сити похожи на небоскребы, которые строятся в мире и чем отличаются.</p>
-            </div>
-            <div class="info-card">
-              <h3 class="info-card__title">В приключение включено</h3>
-              <p class="section__text section__text-info">Мы обойдем абсолютно все небоскребы. Половину экскурсии мы проведем внутри башен. Заглянем в подземные переходы, увидим современные арт объекты. Вы узнаете, почему макет башни Татлина установили в Городе Столиц, в какой башне на высоте 61 этажа находится бассейн, какое участие принимал в строительстве комплекса самаркандский художник Юнус Сафардиар и многое другое. А еще вы узнаете, кто покупает апартаменты в Москва-Сити и как здесь живется.</p>
-            </div>
-            <div class="info-card">
-              <h3 class="info-card__title">Место встречи</h3>
-              <p class="section__text section__text-info">Начало экскурсии у моста Багратион. Точное место встречи вы узнаете сразу после бронирования.</p>
-            </div>
-            <div class="info-card">
-              <h3 class="info-card__title">Полезные подсказки</h3>
-              <ul class="info-card__list">
-                <li class="info-card__item info-card__item_checked">Прогулочный тур</li>
-                <li class="info-card__item info-card__item_checked">Туристический гид</li>
-                <li class="info-card__item">Еда или напитки</li>
-              </ul>
             </div>
           </div>
         </section>
@@ -374,7 +377,7 @@
               </div>
               <p class="product-feedback__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
             </div>
-            <button class="button button_secondary button_max-width">Посмотреть больше отзывов</button>
+            <a class="button button_secondary button_max-width">Посмотреть больше отзывов</a>
           </div>
         </section>
         <section class="section section_offers">

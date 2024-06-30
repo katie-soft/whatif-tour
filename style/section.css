@@ -68,6 +68,15 @@
   background-position-y: 22px;
 }
 
+.section_additional-info {
+  display: none;
+}
+
+.section_additional-info.visible {
+  display: block;
+  margin-bottom: 0;
+}
+
 .section__title {
   font-size: 39px;
   font-weight: 900;
@@ -178,7 +187,7 @@
   margin-bottom: 50px;
 }
 
-.section_info .section-wrapper {
+.section_info > .section-wrapper {
   display: flex;
   gap: 120px;
   align-items: flex-start;
@@ -199,6 +208,10 @@
   .section-wrapper {
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+  .section-wrapper .section-wrapper {
+    padding: 0;
   }
 
   .section-wrapper_video {
@@ -310,7 +323,7 @@
   }
 
   .section_options .section__text, 
-  .section__text-info {
+  .section__text.section__text-info {
     font-size: 14px;
   }
 
