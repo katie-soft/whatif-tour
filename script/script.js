@@ -176,3 +176,16 @@ function hideMore() {
 showMoreButton.addEventListener('click', () => {
   additionalInfoBlock.classList.contains('visible') ? hideMore() : showMore();
 });
+
+/* Slider for city photos */
+
+const cityPhotosSlider = new Swiper('.city-photos-swiper', {
+
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+
+  navigation: {
+    nextEl: '.city-photos__controls .swiper-button-next',
+    prevEl: '.city-photos__controls .swiper-button-prev',
+  },
+});

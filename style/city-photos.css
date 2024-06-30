@@ -11,6 +11,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+  display: block;
 }
 
 .city-photo:nth-of-type(1) {
@@ -65,6 +66,7 @@
   border-top-left-radius: 40px;
   display: flex;
   gap: 14px;
+  z-index: 10;
 }
 
 .video-link_primary {
@@ -74,7 +76,7 @@
   color: var(--color-light);
   align-items: center;
   padding: 8px 14px;
-  bottom: 5px;
+  bottom: 0;
   font-size: 12px;
 }
 
@@ -85,6 +87,29 @@
 .city-photos__gallery {
   display: none;
   position: relative;
+}
+
+.city-photos__gallery .swiper-slide {
+  height: auto;
+}
+
+.city-photos__controls {
+  top: 50%;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.city-photos__control {
+  width: 27px;
+  height: 27px;
+  background-image: url('../image/arrow-round_next.svg');
+}
+
+.city-photos__control:first-child {
+  background-image: url('../image/arrow-round_next.svg');
+  transform: rotate(180deg);
 }
 
 @media (max-width: 770px) {

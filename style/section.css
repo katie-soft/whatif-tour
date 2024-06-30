@@ -301,9 +301,14 @@
     margin-bottom: 32px;
   }
 
+  .section_city-photos {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   .section-wrapper_city-photos {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0;
+    position: relative;
   }
 }
 
