@@ -77,3 +77,10 @@
   margin-bottom: 36px;
   gap: 10px;
 }
+
+.select-wrapper-booking {
+  font-size: 11px;
+  text-transform: none;
+  width: 100%;
+  border-radius: 10px;
+}

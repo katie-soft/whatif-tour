@@ -9,7 +9,7 @@
   background-image: url('../image/form-background.png');
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 20px;
+  border-radius: 30px;
   min-width: 356px;
   padding: 28px 24px 28px 33px;
 }
@@ -159,5 +159,10 @@
 
   .section_info__form {
     min-width: 100%;
+  }
+
+  .section_info__form .form__content {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 }
