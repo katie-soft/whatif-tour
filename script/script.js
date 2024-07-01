@@ -15,8 +15,6 @@ function closeBurgerMenu() {
   burgerMenu.classList.remove('burger-menu_opened')
 }
 
-/* Custom select */
-
 /* Language */
 
 const selectWrapperLanguage = document.querySelector('#select-wrapper-language');
@@ -80,6 +78,8 @@ document.addEventListener('click', (event) => {
       optionsListLanguage.classList.remove('custom-select_active');
     }
 })
+
+/* Main page */
 
 /* Slider for feedback */
 
@@ -151,6 +151,21 @@ const cardSlider = new Swiper('.cards-swiper', {
   },
 });
 
+/* Product page*/
+
+/* Slider for city photos */
+
+const cityPhotosSlider = new Swiper('.city-photos-swiper', {
+
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+
+  navigation: {
+    nextEl: '.city-photos__controls .swiper-button-next',
+    prevEl: '.city-photos__controls .swiper-button-prev',
+  },
+});
+
 /* Show more button */
 
 const showMoreButton = document.querySelector('#button-more');
@@ -177,18 +192,36 @@ showMoreButton.addEventListener('click', () => {
   additionalInfoBlock.classList.contains('visible') ? hideMore() : showMore();
 });
 
-/* Slider for city photos */
+/* Custom select */
 
-const cityPhotosSlider = new Swiper('.city-photos-swiper', {
+const locationSelect = new CustomSelect(locationSelectData);
+locationSelect.create();
 
-  slidesPerView: 1,
-  slidesPerGroup: 1,
+const groupSelect = new CustomSelect(groupSelectData);
+groupSelect.create();
 
-  navigation: {
-    nextEl: '.city-photos__controls .swiper-button-next',
-    prevEl: '.city-photos__controls .swiper-button-prev',
-  },
-});
+const formatSelect = new CustomSelect(formatSelectData);
+formatSelect.create();
+
+/* Modal with booking form */
+
+const bookingModal = document.querySelector('#booking-modal');
+const bookingModalCloseButton = bookingModal.querySelector('#booking-close-button');
+
+bookingModalCloseButton.addEventListener('click', () => bookingModal.close());
+
+/* Booking forms */
+
+const bookingForm = document.querySelector('#booking-form');
+
+bookingForm.addEventListener('submit', handleBooking);
+
+function handleBooking(event) {
+  event.preventDefault();
+  const data = new FormData(bookingForm);
+  console.log(Object.fromEntries(data.entries()));
+  bookingModal.showModal();
+}
 
 /* Modal with feedback form */
 
@@ -210,7 +243,6 @@ fileInput.addEventListener('change', () => {
     listItem.textContent = file.name;
     fileList.append(listItem);
   })
-  
 })
 
 /* Feedback form */

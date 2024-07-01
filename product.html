@@ -246,36 +246,16 @@
                 <h5 class="form__title">Об экскурсии</h5>
                 <span class="form__rating">4.95</span>
               </div>
-              <form class="booking-form">
+              <form class="booking-form" id="booking-form">
                 <div class="form__content">
                   <label class="form__label" for="location">Локация</label>
-                  <div class="select-wrapper select-wrapper-booking">
-                    <span>Музей</span>
-                    <ul class="custom-select">
-                      <li class="custom-select__option">Музей</li>
-                      <li class="custom-select__option">Город</li>
-                      <li class="custom-select__option">Выставки</li>
-                    </ul>
-                  </div>
+                  <div id="select-wrapper-location" class="form__input"></div>
                   <label class="form__label" for="duration">Длительность</label>
                   <input class="form__input" type="text" name="duration" id="duration" placeholder="Ваш ответ">
                   <label class="form__label" for="audience">Для кого</label>
-                  <div class="select-wrapper select-wrapper-booking">
-                    <span>Взрослые</span>
-                    <ul class="custom-select">
-                      <li class="custom-select__option">Взрослые</li>
-                      <li class="custom-select__option">Дети</li>
-                      <li class="custom-select__option">Все</li>
-                    </ul>
-                  </div>
+                  <div id="select-wrapper-group" class="form__input"></div>
                   <label class="form__label" for="format">Формат</label>
-                  <div class="select-wrapper select-wrapper-booking">
-                    <span>Индивидуальная</span>
-                    <ul class="custom-select">
-                      <li class="custom-select__option">Индивидуальная</li>
-                      <li class="custom-select__option">Групповая</li>
-                    </ul>
-                  </div>
+                  <div id="select-wrapper-format" class="form__input"></div>
                   <label class="form__label" for="quantity">Кол-во участников</label>
                   <input class="form__input" type="text" name="quantity" id="quantity" placeholder="Ваш ответ">
                   <label class="form__label" for="languages">Языки</label>
@@ -549,7 +529,15 @@
           <button type="submit" class="button button_secondary" id="feedback-submit">Отправить отзыв</button>
         </form>
       </dialog> 
+      <dialog class="modal modal_booking" id="booking-modal">
+        <button class="button button_close" id="booking-close-button"></button>
+        <h3 class="modal_booking__title">Купить квест-экскурсию</h3>
+        <img src="./image/photo1.png" alt="Купить квест-экскурсию">
+        <a href="#" class="button button_secondary button_max-width">Купить</a>
+      </dialog> 
       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      <script src="./script/customSelect.js"></script>
+      <script src="./script/selectData.js"></script>
       <script src="./script/script.js"></script>
     </body>
   </html>

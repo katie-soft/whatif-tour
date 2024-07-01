@@ -108,6 +108,25 @@
   padding: 0;
 }
 
+.modal_booking {
+  width: 340px;
+  padding: 48px 30px 40px 30px;
+}
+
+.modal_booking img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 35px;
+}
+
+.modal_booking__title {
+  color: var(--color-primary);
+  font-size: 27px;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
 @media (max-width: 550px) {
 
   .modal_feedback {
