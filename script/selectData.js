@@ -2,7 +2,6 @@ const locationSelectData = {
   wrapperSelector: '#select-wrapper-location',
   name: 'location',
   id: 'location',
-  placeholderColor: '#FFFFFF',
   mainColor: '#FFFFFF',
   eventName: 'setCustomSelectValue',
   options: [
@@ -25,7 +24,6 @@ const groupSelectData = {
   wrapperSelector: '#select-wrapper-group',
   name: 'group',
   id: 'group',
-  placeholderColor: '#FFFFFF',
   mainColor: '#FFFFFF',
   eventName: 'setCustomSelectValue',
   options: [
@@ -48,7 +46,6 @@ const formatSelectData = {
   wrapperSelector: '#select-wrapper-format',
   name: 'format',
   id: 'format',
-  placeholderColor: '#FFFFFF',
   mainColor: '#FFFFFF',
   eventName: 'setCustomSelectValue',
   options: [
@@ -62,7 +59,7 @@ const formatSelectData = {
     },
     {
       name: 'В телефоне',
-      value: 'online'
+      value: 'printable'
     },
   ],
 }

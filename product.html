@@ -529,11 +529,39 @@
           <button type="submit" class="button button_secondary" id="feedback-submit">Отправить отзыв</button>
         </form>
       </dialog> 
-      <dialog class="modal modal_booking" id="booking-modal">
-        <button class="button button_close" id="booking-close-button"></button>
+      <dialog class="modal modal_booking" id="booking-modal-individual">
+        <button class="button button_close"></button>
+        <h3 class="modal_booking__title">Заказать квест-экскурсию</h3>
+        <p class="modal_booking__text">Заполните форму, чтобы забронировать квест-экскурсию</p>
+        <img src="./image/photo1.png" alt="Купить квест-экскурсию">
+        <form class="modal_booking__form">
+          <input type="text" class="form__input form__input_primary" name="name" placeholder="Имя">
+          <input type="text" class="form__input form__input_primary" name="phone" placeholder="Телефон">
+          <input type="text" class="form__input form__input_primary" name="email" placeholder="Электронная почта">
+          <input type="text" class="form__input form__input_primary" name="participants" placeholder="Кол-во участников">
+          <input type="text" class="form__input form__input_primary" name="comments" placeholder="Комментарии">
+          <button type="submit" class="button button_secondary button_max-width">Забронировать</button>
+        </form>
+      </dialog> 
+      <dialog class="modal modal_booking" id="booking-modal-group">
+        <button class="button button_close"></button>
+        <h3 class="modal_booking__title">Забронировать квест-экскурсию</h3>
+        <p class="modal_booking__text">Заполните форму, чтобы забронировать квест-экскурсию</p>
+        <div class="modal_booking__calendar">Calendar</div>
+        <form class="modal_booking__form">
+          <input type="text" class="form__input form__input_primary" name="name" placeholder="Имя">
+          <input type="text" class="form__input form__input_primary" name="phone" placeholder="Телефон">
+          <input type="text" class="form__input form__input_primary" name="email" placeholder="Электронная почта">
+          <input type="text" class="form__input form__input_primary" name="participants" placeholder="Кол-во участников">
+          <input type="text" class="form__input form__input_primary" name="comments" placeholder="Комментарии">
+          <button type="submit" class="button button_secondary button_max-width">Забронировать</button>
+        </form>
+      </dialog> 
+      <dialog class="modal modal_booking" id="booking-modal-printable">
+        <button class="button button_close"></button>
         <h3 class="modal_booking__title">Купить квест-экскурсию</h3>
         <img src="./image/photo1.png" alt="Купить квест-экскурсию">
-        <a href="#" class="button button_secondary button_max-width">Купить</a>
+        <a href="/" class="button button_secondary button_max-width">Купить</a>
       </dialog> 
       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
       <script src="./script/customSelect.js"></script>

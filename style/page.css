@@ -7,6 +7,10 @@ body {
   font-family: 'Onest', sans-serif;
 }
 
+body:has(dialog[open]) {
+  overflow-y: hidden;
+}
+
 * {
   box-sizing: border-box;
 }

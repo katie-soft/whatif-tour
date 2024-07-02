@@ -32,6 +32,7 @@
 .section_info__form .form__rating {
   color: var(--color-light);
   font-size: 14px;
+  display: flex;
 }
 
 .section_info__form .form__rating::before {

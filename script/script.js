@@ -203,24 +203,34 @@ groupSelect.create();
 const formatSelect = new CustomSelect(formatSelectData);
 formatSelect.create();
 
-/* Modal with booking form */
-
-const bookingModal = document.querySelector('#booking-modal');
-const bookingModalCloseButton = bookingModal.querySelector('#booking-close-button');
-
-bookingModalCloseButton.addEventListener('click', () => bookingModal.close());
-
 /* Booking forms */
 
-const bookingForm = document.querySelector('#booking-form');
+function openBookingModal(type) {
+  const bookingModal = document.querySelector(`#booking-modal-${type}`);
+  const bookingModalCloseButton = bookingModal.querySelector('.button_close');
+  bookingModalCloseButton.addEventListener('click', () => bookingModal.close());
+  bookingModal.showModal();
+}
 
+const bookingForm = document.querySelector('#booking-form');
 bookingForm.addEventListener('submit', handleBooking);
 
 function handleBooking(event) {
   event.preventDefault();
   const data = new FormData(bookingForm);
   console.log(Object.fromEntries(data.entries()));
-  bookingModal.showModal();
+  openBookingModal(Object.fromEntries(data.entries()).format);  
+
+  const bookingPersonalInfoForm = document.querySelector('dialog[open] .modal_booking__form');
+  if (bookingPersonalInfoForm) {
+    bookingPersonalInfoForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const data = new FormData(bookingPersonalInfoForm);
+    console.log(Object.fromEntries(data.entries()));
+    bookingPersonalInfoForm.reset();
+    document.querySelector('dialog[open]').close();
+    });
+  }
 }
 
 /* Modal with feedback form */

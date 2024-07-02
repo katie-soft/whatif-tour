@@ -9,9 +9,24 @@
   color: var(--color-light);
 }
 
+.form__input_primary {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  font-size: 12px;
+  padding: 10px 15px;
+}
+
+.form__input_primary:last-of-type {
+  margin-bottom: 15px;
+}
+
 .form__input::placeholder {
   color: var(--color-light);
   opacity: 0.6;
+}
+
+.form__input_primary::placeholder {
+  color: var(--color-primary);
 }
 
 .form__input:focus-visible {

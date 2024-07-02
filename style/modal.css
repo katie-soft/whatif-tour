@@ -3,6 +3,10 @@
   border-radius: 20px;
 }
 
+.modal:-internal-dialog-in-top-layer::backdrop {
+  background: rgba(0, 0, 0, 0.3);
+}
+
 .modal_feedback {
   min-width: 500px;
   padding: 38px 50px 40px 50px;
@@ -117,6 +121,7 @@
   display: block;
   max-width: 100%;
   margin-bottom: 35px;
+  margin-top: 30px;
 }
 
 .modal_booking__title {
@@ -124,7 +129,17 @@
   font-size: 27px;
   font-weight: 800;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+}
+
+.modal_booking__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal_booking .button {
+  font-size: 12px;
 }
 
 @media (max-width: 550px) {
