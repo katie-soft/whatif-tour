@@ -1,0 +1,61 @@
+.air-datepicker {
+  --adp-day-cell-width: 37px;
+  --adp-day-cell-height: 37px;
+}
+
+.air-datepicker.-inline- {
+  border: none;
+}
+
+.air-datepicker-nav, 
+.air-datepicker-nav i {
+  color: var(--color-primary);
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Onest', sans-serif;
+}
+
+.air-datepicker-body--day-names {
+  display: none;
+}
+
+.air-datepicker-body--cells.-days- {
+  gap: 3px;
+}
+
+.air-datepicker-cell {
+  border-radius: 0;
+  color: #252525;
+  font-size: 14px;
+  font-family: 'Onest', sans-serif;
+}
+
+.air-datepicker-cell.-selected-,
+.air-datepicker-cell.-available-cell-.-selected-:hover {
+  background-color: #252525;
+}
+
+.-available-cell- {
+  background-color: #58AAA4;
+  position: relative;
+  align-items: flex-start;
+  padding-top: 6px;
+}
+
+.-available-cell-::after {
+  content: '3460';
+  font-size: 8px;
+  position: absolute;
+  bottom: 7px;
+}
+
+.-day-:not(.-available-cell-),
+.air-datepicker-cell:not(.-available-cell-).-selected-:hover {
+  background-color: #B04B4B;
+}
+
+.air-datepicker-cell.-day-.-other-month-,
+.air-datepicker-cell.-day-.-other-month-:hover {
+  background-color: #D9D9D9;
+  color: #D9D9D9;
+}

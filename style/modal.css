@@ -132,6 +132,14 @@
   margin-bottom: 15px;
 }
 
+.modal_booking__text {
+  margin-bottom: 25px;
+}
+
+.modal_booking__calendar {
+  margin-bottom: 35px;
+}
+
 .modal_booking__form {
   display: flex;
   flex-direction: column;

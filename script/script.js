@@ -233,6 +233,28 @@ function handleBooking(event) {
   }
 }
 
+/* Calendar */
+
+let today = new Date();
+const calendar = new AirDatepicker('#calendar', {
+  minDate: today, 
+  prevHtml: '<',
+  nextHtml: '>',
+  onRenderCell({date, cellType}) {
+    let avaliableDates = [8, 9, 13, 14, 23, 24, 28, 29, 30],
+    isDay = cellType === 'day',
+    _date = date.getDate(),
+    shouldChangeContent = isDay && avaliableDates.includes(_date);
+   
+    return {
+     classes: shouldChangeContent ? '-available-cell-' : undefined,
+    }
+  },
+  onSelect({date}) {
+    document.querySelector('#date-hidden-input').value = date;
+  }
+});
+
 /* Modal with feedback form */
 
 const feedbackModal = document.querySelector('#feedback-modal');
@@ -273,3 +295,4 @@ feedbackForm.addEventListener('submit', (event) => {
   feedbackForm.reset();
   fileList.innerHTML = '';
 });
+
