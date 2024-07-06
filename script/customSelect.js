@@ -37,7 +37,6 @@ class CustomSelect extends EventTarget {
         this.visibleSpan.innerText = this.data.options[0].name;
         this.hiddenInput.value = this.data.options[0].value;
       }
-      
     }
 
     renderList() {

@@ -84,3 +84,26 @@
   width: 100%;
   border-radius: 10px;
 }
+
+.burger .custom-select__wrapper {
+  min-width: 110px;
+}
+
+.burger .custom-select__wrapper::after {
+  color: var(--color-secondary);
+}
+
+.burger .custom-select__list {
+  border-color: currentColor;
+  margin-top: 3px;
+}
+
+.burger .custom-select__list-item {
+  background-color: var(--color-light);
+  color: var(--color-secondary);
+  font-size: 14px;
+}
+
+.burger .custom-select__list-item:hover {
+  color: var(--color-light);
+}
