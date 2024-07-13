@@ -244,13 +244,22 @@
               <form class="booking-form" id="booking-form">
                 <div class="form__content">
                   <label class="form__label" for="location">Локация</label>
-                  <div id="select-wrapper-location" class="form__input"></div>
+                  <span class="form__info">
+                    <input type="hidden" name="place" value="museum" />
+                    Музей
+                  </span>                  
                   <label class="form__label" for="duration">Длительность</label>
                   <input class="form__input" type="text" name="duration" id="duration" placeholder="Ваш ответ">
                   <label class="form__label" for="audience">Для кого</label>
-                  <div id="select-wrapper-group" class="form__input"></div>
+                  <span class="form__info">
+                    <input type="hidden" name="group" value="adults" />
+                    Взрослые
+                  </span>  
                   <label class="form__label" for="format">Формат</label>
-                  <div id="select-wrapper-format" class="form__input"></div>
+                  <span class="form__info">
+                    <input type="hidden" name="format" value="individual" />
+                    Индивидуальная
+                  </span>  
                   <label class="form__label" for="quantity">Кол-во участников</label>
                   <input class="form__input" type="text" name="quantity" id="quantity" placeholder="Ваш ответ">
                   <label class="form__label" for="languages">Языки</label>

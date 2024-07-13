@@ -32,3 +32,12 @@
 .form__input:focus-visible {
   outline: 1px solid var(--color-light);
 }
+
+.form__info {
+  border: 1px solid var(--color-light);
+  border-radius: 10px;
+  padding: 5px 12px;
+  font-size: 11px;
+  font-family: 'Onest', sans-serif;
+  color: var(--color-light);
+}

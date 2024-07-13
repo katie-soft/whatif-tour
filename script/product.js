@@ -39,17 +39,6 @@ showMoreButton.addEventListener('click', () => {
   additionalInfoBlock.classList.contains('visible') ? hideMore() : showMore();
 });
 
-/* Custom select */
-
-const locationSelect = new CustomSelect(locationSelectData);
-locationSelect.create();
-
-const groupSelect = new CustomSelect(groupSelectData);
-groupSelect.create();
-
-const formatSelect = new CustomSelect(formatSelectData);
-formatSelect.create();
-
 /* Booking forms */
 
 function openBookingModal(type) {
@@ -67,6 +56,8 @@ function handleBooking(event) {
   const data = new FormData(bookingForm);
   console.log(Object.fromEntries(data.entries()));
   openBookingModal(Object.fromEntries(data.entries()).format);  
+  // для открытия модального окна с формой заказа групповой экскурсии вызовите функцию openBookingModal('group')
+  // для открытия модального окна с формой заказа экскурсии c распечатанными материалами вызовите функцию openBookingModal('printable')
 
   const bookingPersonalInfoForm = document.querySelector('dialog[open] .modal_booking__form');
   if (bookingPersonalInfoForm) {
