@@ -24,3 +24,11 @@ languageSelect.addEventListener(languageSelectData.eventName, () => console.log(
 const currencySelect = new CustomSelect(currencySelectData);
 currencySelect.create();
 currencySelect.addEventListener(currencySelectData.eventName, () => console.log(currencySelect.hiddenInput.value));
+
+const headerLanguageSelect = new CustomSelect(headerLanguageSelectData);
+headerLanguageSelect.create();
+headerLanguageSelect.addEventListener(headerLanguageSelectData.eventName, () => console.log(headerLanguageSelect.hiddenInput.value));
+
+const headerCurrencySelect = new CustomSelect(headerCurrencySelectData);
+headerCurrencySelect.create();
+headerCurrencySelect.addEventListener(headerCurrencySelectData.eventName, () => console.log(headerCurrencySelect.hiddenInput.value));
