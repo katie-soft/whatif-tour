@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Блог</title>
+    <link rel="icon" href="./image/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;900&family=Source+Code+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.3/air-datepicker.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <header class="header header_primary" id="top">
+      <div class="header__select">
+        <a class="header__logo" href="#">
+          <img
+            class="header__logo-image header__logo-image_desktop"
+            src="./image/logo.png"
+            alt="What If Tour"
+          />
+          <img
+            class="header__logo-image header__logo-image_mobile"
+            src="./image/logo_primary.png"
+            alt="What If Tour"
+          />
+        </a>
+        <div class="select-wrapper" id="select-wrapper-language"></div>
+        <div class="select-wrapper" id="select-wrapper-currency"></div>
+      </div>
+      <div class="header__user-info">
+        <a class="header__user-link" href="#">
+          <img src="./image/user.svg" alt="User" />
+          <span>Войти</span>
+        </a>
+        <button class="button button_secondary">Зарегистрироваться</button>
+      </div>
+      <div class="burger">
+        <a class="burger__user-icon" href="#">
+          <img src="./image/user_primary.svg" alt="User" />
+        </a>
+        <div class="burger-icon" id="burger-icon"></div>
+        <div class="burger-menu" id="burger-menu">
+          <div class="burger-menu__close" id="close-burger"></div>
+          <div class="burger-menu__select-wrapper">
+            <div
+              class="burger-menu__select"
+              id="burger-select-wrapper-language"
+            ></div>
+            <div
+              class="burger-menu__select"
+              id="burger-select-wrapper-currency"
+            ></div>
+          </div>
+          <div class="burger-menu__user">
+            <img
+              class="burger-menu__user-logo_"
+              src="./image/user_secondary.svg"
+              alt=""
+            />
+            <div>
+              <a class="user__link user__link_singin" href="#">Войти</a>
+              <br />
+              <span
+                >или
+                <a class="user__link user__link_register" href="#"
+                  >зарегистрироваться</a
+                ></span
+              >
+            </div>
+          </div>
+          <nav class="burger-menu__nav">
+            <ul class="burger-menu__list">
+              <li class="burger-menu__list-item">
+                <a class="burger-menu__link" href="#">Что такое квесты</a>
+              </li>
+              <li class="burger-menu__list-item">
+                <a class="burger-menu__link" href="#">Живые квесты</a>
+              </li>
+              <li class="burger-menu__list-item">
+                <a class="burger-menu__link" href="#">Printable квесты</a>
+              </li>
+            </ul>
+            <ul class="burger-menu__list">
+              <li class="burger-menu__list-item">
+                <a class="burger-menu__link" href="#">Квест-приложения</a>
+              </li>
+              <li class="burger-menu__list-item">
+                <a class="burger-menu__link" href="#">Отзывы</a>
+              </li>
+              <li class="burger-menu__list-item">
+                <a class="burger-menu__link" href="#">Блог</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="burger-menu__social">
+            <a
+              class="social-link_secondary social-link_telegram_secondary"
+              href=""
+            ></a>
+            <a
+              class="social-link_secondary social-link_insta_secondary"
+              href=""
+            ></a>
+            <a
+              class="social-link_secondary social-link_whatsapp_secondary"
+              href=""
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="blog-grid">
+        <div class="blog-card">
+          <a href="#">
+            <img
+              class="blog-card__img"
+              src="https://rubikam.ru/wp-content/uploads/2021/06/photo1624536306.jpeg"
+              alt="Обложка блога"
+            />
+            <h2 class="blog-card__title">
+              Что такое квест-экскурсии и почему за ними будущее
+            </h2>
+            <p class="blog-card__text">
+              Привет! Я Наташа, и моя суперспособность — превращать все в квест.
+              Не только праздники, но уроки и конференции. Я занимаюсь созданием
+              сюжетных игр с 2012 года (дата основания совместной с мужем
+              компании Questime). За 10+ лет в наши квесты сыграли больше 300
+              000 человек в России, США, Европе и Израиле.
+            </p>
+          </a>
+        </div>
+        <div class="blog-card">
+          <a href="#">
+            <img
+              class="blog-card__img"
+              src="https://rubikam.ru/wp-content/uploads/2023/03/DR-146-scaled.jpg"
+              alt="Обложка блога"
+            />
+            <h2 class="blog-card__title">
+              Захватывающий сюжет или прикольная концепция
+            </h2>
+            <p class="blog-card__text">
+              Ученый из будущего создал робота и заставлял его бесконечно решать
+              головоломки, чтобы усовершенствовать. За это робот отправил
+              ученого в Средневековье. Выбраться тот сможет, только разгадав все
+              головоломки. Участники экскурсии через приложение в телефоне
+              помогают ученому убежать от инквизиторов и пройти задания робота.
+            </p>
+          </a>
+        </div>
+        <div class="blog-card">
+          <a href="#">
+            <img
+              class="blog-card__img"
+              src="https://rubikam.ru/wp-content/uploads/2023/04/IMG_7114-1-1-2048x1152.jpg"
+              alt="Обложка блога"
+            />
+            <h2 class="blog-card__title">Создаем потрясающий опыт</h2>
+            <p class="blog-card__text">
+              К любому формату вы можете добавить wow-эффекты, например,
+              актеров, которые сначала выглядят как уличные музыканты или
+              продавцы, а потом вдруг становятся частью истории и предлагают
+              участникам поиграть. Или это могут быть тайники, необычный
+              реквизит (квест-чемодан, старинная карта) qr-коды, или вообще —
+              дополненная реальность.
+            </p></a
+          >
+        </div>
+        <div class="blog-card">
+          <a href="#">
+            <img
+              class="blog-card__img"
+              src="https://rubikam.ru/wp-content/uploads/2023/04/359-2048x1366.jpg"
+              alt="Обложка блога"
+            />
+            <h2 class="blog-card__title">Зачем вообще нужны квест-экскурсии</h2>
+            <p class="blog-card__text">
+              Но без знания истории не будет КРИТИЧЕСКОГО МЫШЛЕНИЯ, не будет
+              КУЛЬТУРЫ, не будет потребности добраться до истины, ПОНЯТЬ, почему
+              вот так.
+            </p></a
+          >
+        </div>
+        <div class="blog-card">
+          <a href="#">
+            <img
+              class="blog-card__img"
+              src="https://rubikam.ru/wp-content/uploads/2024/01/IMG_8913-600x601.jpg"
+              alt="Обложка блога"
+            />
+            <h2 class="blog-card__title">
+              Приемы создания захватывающих историй
+            </h2>
+            <p class="blog-card__text">
+              Я предлагаю нам взять все лучшее от голливудских сценариев,
+              компьютерных и настольных игр, ролевых и дворовых квестов, escape
+              the rooms. И использовать это в своих квест-экскурсиях.
+            </p></a
+          >
+        </div>
+        <div class="blog-card">
+          <a href="#">
+            <img
+              class="blog-card__img"
+              src="https://rubikam.ru/wp-content/uploads/2023/03/image.png"
+              alt="Обложка блога"
+            />
+            <h2 class="blog-card__title">Формула квест-экскурсии</h2>
+            <p class="blog-card__text">
+              Помимо увлекательной истории, у нас должны быть классные задания.
+              А классные задания это те, которые интересно выполнять. И что
+              очень важно — они должны быть разнообразными. Чтобы участник
+              предвкушал каждое следующее задание, ведь предыдущее его удивило.
+            </p></a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <a class="link-up" href="#top">
+          <img class="link-up__image" src="./image/arrow_up.svg" />
+          Наверх
+        </a>
+        <div class="footer__content">
+          <div class="social-wrapper">
+            <a class="social-link social-link_telegram" href=""></a>
+            <a class="social-link social-link_insta" href=""></a>
+            <a class="social-link social-link_whatsapp" href=""></a>
+          </div>
+          <nav class="footer__nav">
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Выбрать квест</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Что такое квесты</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Блог</a>
+              </li>
+            </ul>
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Отзывы</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Живые квесты</a>
+              </li>
+            </ul>
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Printable квесты</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Квест-приложения</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__docs">
+            <ul class="docs-list">
+              <li class="docs-list__item">
+                <a class="docs-list__link" href="#"
+                  >Политика конфиденциальности</a
+                >
+              </li>
+              <li class="docs-list__item">
+                <a class="docs-list__link" href="#">Договор оферта</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <dialog class="modal modal_feedback" id="feedback-modal">
+      <button class="button button_close" id="feedback-close-button"></button>
+      <h3 class="modal_feedback__title">Оставить отзыв</h3>
+      <form class="feedback-form" id="feedback-form">
+        <div class="feedback-form__rating-wrapper" id="feedback-form-rating">
+          <label for="rating-1" class="feedback-form__rating-label">
+            <input
+              type="radio"
+              class="feedback-form__rating"
+              name="rating"
+              id="rating-1"
+              value="1"
+            />
+          </label>
+          <label for="rating-2" class="feedback-form__rating-label">
+            <input
+              type="radio"
+              class="feedback-form__rating"
+              name="rating"
+              id="rating-2"
+              value="2"
+            />
+          </label>
+          <label for="rating-3" class="feedback-form__rating-label">
+            <input
+              type="radio"
+              class="feedback-form__rating"
+              name="rating"
+              id="rating-3"
+              value="3"
+            />
+          </label>
+          <label for="rating-4" class="feedback-form__rating-label">
+            <input
+              type="radio"
+              class="feedback-form__rating"
+              name="rating"
+              id="rating-4"
+              value="4"
+            />
+          </label>
+          <label for="rating-5" class="feedback-form__rating-label">
+            <input
+              type="radio"
+              class="feedback-form__rating"
+              name="rating"
+              id="rating-5"
+              value="5"
+            />
+          </label>
+        </div>
+        <textarea
+          name="feedback"
+          id="feedback-form-text"
+          class="feedback-form__text"
+          placeholder="Напишите свой отзыв"
+          required
+        ></textarea>
+        <label for="image" class="feedback-form__image">
+          <span class="label-header">
+            <img src="./image/camera-icon.svg" />
+            Добавить фото
+          </span>
+          <input
+            type="file"
+            class="feedback-form__file"
+            accept="image/*"
+            name="image"
+            multiple
+          />
+          <ul class="feedback-form__uploaded-files"></ul>
+        </label>
+        <button
+          type="submit"
+          class="button button_secondary"
+          id="feedback-submit"
+        >
+          Отправить отзыв
+        </button>
+      </form>
+    </dialog>
+    <dialog class="modal modal_booking" id="booking-modal-individual">
+      <button class="button button_close"></button>
+      <h3 class="modal_booking__title">Заказать квест-экскурсию</h3>
+      <p class="modal_booking__text">
+        Заполните форму, чтобы забронировать квест-экскурсию
+      </p>
+      <img src="./image/photo1.png" alt="Купить квест-экскурсию" />
+      <form class="modal_booking__form">
+        <input
+          type="text"
+          class="form__input form__input_primary"
+          name="name"
+          placeholder="Имя"
+        />
+        <input
+          type="text"
+          class="form__input form__input_primary"
+          name="phone"
+          placeholder="Телефон"
+        />
+        <input
+          type="text"
+          class="form__input form__input_primary"
+          name="email"
+          placeholder="Электронная почта"
+        />
+        <input
+          type="text"
+          class="form__input form__input_primary"
+          name="participants"
+          placeholder="Кол-во участников"
+        />
+        <input
+          type="text"
+          class="form__input form__input_primary"
+          name="comments"
+          placeholder="Комментарии"
+        />
+        <button type="submit" class="button button_secondary button_max-width">
+          Забронировать
+        </button>
+      </form>
+    </dialog>
+    <dialog class="modal modal_booking" id="booking-modal-group">
+      <button class="button button_close"></button>
+      <h3 class="modal_booking__title">Забронировать квест-экскурсию</h3>
+      <p class="modal_booking__text">
+        Заполните форму, чтобы забронировать квест-экскурсию
+      </p>
+      <div class="modal_booking__calendar" id="calendar"></div>
+      <form class="modal_booking__form">
+        <input type="hidden" name="date" id="date-hidden-input" />
+        <input
+          type="text"
+          class="form__input form__input_primary"
+          name="name"
+          placeholder="Имя"
+        />
+        <input
+          type="text"
+          class="form__input form__input_primary"
+          name="phone"
+          placeholder="Телефон"
+        />
+        <input
+          type="text"
+          class="form__input form__input_primary"
+          name="email"
+          placeholder="Электронная почта"
+        />
+        <input
+          type="text"
+          class="form__input form__input_primary"
+          name="participants"
+          placeholder="Кол-во участников"
+        />
+        <input
+          type="text"
+          class="form__input form__input_primary"
+          name="comments"
+          placeholder="Комментарии"
+        />
+        <button type="submit" class="button button_secondary button_max-width">
+          Забронировать
+        </button>
+      </form>
+    </dialog>
+    <dialog class="modal modal_booking" id="booking-modal-printable">
+      <button class="button button_close"></button>
+      <h3 class="modal_booking__title">Купить квест-экскурсию</h3>
+      <img src="./image/photo1.png" alt="Купить квест-экскурсию" />
+      <a href="/" class="button button_secondary button_max-width">Купить</a>
+    </dialog>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.3/air-datepicker.min.js"></script>
+    <script src="./script/customSelect.js"></script>
+    <script src="./script/selectData.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/product.js"></script>
+  </body>
+</html>
