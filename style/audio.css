@@ -1,0 +1,12 @@
+.audio {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.audio__title {
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    font-size: 18px;
+}

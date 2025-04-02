@@ -15,546 +15,968 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <link href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.3/air-datepicker.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.3/air-datepicker.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style/style.css" />
   </head>
-    <body>
-      <header class="header header_primary" id="top">
-        <div class="header__select">
-          <a class="header__logo" href="#">
+  <body>
+    <header class="header header_primary" id="top">
+      <div class="header__select">
+        <a class="header__logo" href="#">
+          <img
+            class="header__logo-image header__logo-image_desktop"
+            src="./image/logo.png"
+            alt="What If Tour"
+          />
+          <img
+            class="header__logo-image header__logo-image_mobile"
+            src="./image/logo_primary.png"
+            alt="What If Tour"
+          />
+        </a>
+        <div class="select-wrapper" id="select-wrapper-language"></div>
+        <div class="select-wrapper" id="select-wrapper-currency"></div>
+      </div>
+      <div class="header__user-info">
+        <a class="header__user-link" href="#">
+          <img src="./image/user.svg" alt="User" />
+          <span>Войти</span>
+        </a>
+        <button class="button button_secondary">Зарегистрироваться</button>
+      </div>
+      <div class="burger">
+        <a class="burger__user-icon" href="#">
+          <img src="./image/user_primary.svg" alt="User" />
+        </a>
+        <div class="burger-icon" id="burger-icon"></div>
+        <div class="burger-menu" id="burger-menu">
+          <div class="burger-menu__close" id="close-burger"></div>
+          <div class="burger-menu__select-wrapper">
+            <div
+              class="burger-menu__select"
+              id="burger-select-wrapper-language"
+            ></div>
+            <div
+              class="burger-menu__select"
+              id="burger-select-wrapper-currency"
+            ></div>
+          </div>
+          <div class="burger-menu__user">
             <img
-              class="header__logo-image header__logo-image_desktop"
-              src="./image/logo.png"
-              alt="What If Tour"
+              class="burger-menu__user-logo_"
+              src="./image/user_secondary.svg"
+              alt=""
             />
-            <img
-              class="header__logo-image header__logo-image_mobile"
-              src="./image/logo_primary.png"
-              alt="What If Tour"
-            />
-          </a>
-          <div class="select-wrapper" id="select-wrapper-language"></div>
-          <div class="select-wrapper" id="select-wrapper-currency"></div>
-        </div>
-        <div class="header__user-info">
-          <a class="header__user-link" href="#">
-            <img src="./image/user.svg" alt="User" />
-            <span>Войти</span>
-          </a>
-          <button class="button button_secondary">Зарегистрироваться</button>
-        </div>
-        <div class="burger">
-          <a class="burger__user-icon" href="#">
-            <img src="./image/user_primary.svg" alt="User" />
-          </a>
-          <div class="burger-icon" id="burger-icon"></div>
-          <div class="burger-menu" id="burger-menu">
-            <div class="burger-menu__close" id="close-burger"></div>
-            <div class="burger-menu__select-wrapper">
-              <div class="burger-menu__select" id="burger-select-wrapper-language"></div>
-              <div class="burger-menu__select" id="burger-select-wrapper-currency"></div>
-            </div>
-            <div class="burger-menu__user">
-              <img class="burger-menu__user-logo_" src="./image/user_secondary.svg" alt="" />
-              <div>
-                <a class="user__link user__link_singin" href="#">Войти</a>
-                <br />
-                <span
-                  >или
-                  <a class="user__link user__link_register" href="#"
-                    >зарегистрироваться</a
-                  ></span
-                >
-              </div>
-            </div>
-            <nav class="burger-menu__nav">
-              <ul class="burger-menu__list">
-                <li class="burger-menu__list-item">
-                  <a class="burger-menu__link" href="#">Что такое квесты</a>
-                </li>
-                <li class="burger-menu__list-item">
-                  <a class="burger-menu__link" href="#">Живые квесты</a>
-                </li>
-                <li class="burger-menu__list-item">
-                  <a class="burger-menu__link" href="#">Printable квесты</a>
-                </li>
-              </ul>
-              <ul class="burger-menu__list">
-                <li class="burger-menu__list-item">
-                  <a class="burger-menu__link" href="#">Квест-приложения</a>
-                </li>
-                <li class="burger-menu__list-item">
-                  <a class="burger-menu__link" href="#">Отзывы</a>
-                </li>
-                <li class="burger-menu__list-item">
-                  <a class="burger-menu__link" href="#">Блог</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="burger-menu__social">
-              <a
-                class="social-link_secondary social-link_telegram_secondary"
-                href=""
-              ></a>
-              <a
-                class="social-link_secondary social-link_insta_secondary"
-                href=""
-              ></a>
-              <a
-                class="social-link_secondary social-link_whatsapp_secondary"
-                href=""
-              ></a>
+            <div>
+              <a class="user__link user__link_singin" href="#">Войти</a>
+              <br />
+              <span
+                >или
+                <a class="user__link user__link_register" href="#"
+                  >зарегистрироваться</a
+                ></span
+              >
             </div>
           </div>
+          <nav class="burger-menu__nav">
+            <ul class="burger-menu__list">
+              <li class="burger-menu__list-item">
+                <a class="burger-menu__link" href="#">Что такое квесты</a>
+              </li>
+              <li class="burger-menu__list-item">
+                <a class="burger-menu__link" href="#">Живые квесты</a>
+              </li>
+              <li class="burger-menu__list-item">
+                <a class="burger-menu__link" href="#">Printable квесты</a>
+              </li>
+            </ul>
+            <ul class="burger-menu__list">
+              <li class="burger-menu__list-item">
+                <a class="burger-menu__link" href="#">Квест-приложения</a>
+              </li>
+              <li class="burger-menu__list-item">
+                <a class="burger-menu__link" href="#">Отзывы</a>
+              </li>
+              <li class="burger-menu__list-item">
+                <a class="burger-menu__link" href="#">Блог</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="burger-menu__social">
+            <a
+              class="social-link_secondary social-link_telegram_secondary"
+              href=""
+            ></a>
+            <a
+              class="social-link_secondary social-link_insta_secondary"
+              href=""
+            ></a>
+            <a
+              class="social-link_secondary social-link_whatsapp_secondary"
+              href=""
+            ></a>
+          </div>
         </div>
-      </header>
-      <main>
-        <section class="section section_search">
-          <div class="section-wrapper">
-            <div class="search">
-              <div class="search__wrapper">
-                <img
-                  class="search__icon"
-                  src="./image/search_primary.svg"
-                  alt="Search"
-                />
-                <input
-                  class="search__input search__input_primary"
-                  type="text"
-                  placeholder="Куда вы собираетесь?"
-                />
-              </div>
+      </div>
+    </header>
+    <main>
+      <section class="section section_search">
+        <div class="section-wrapper">
+          <div class="search">
+            <div class="search__wrapper">
+              <img
+                class="search__icon"
+                src="./image/search_primary.svg"
+                alt="Search"
+              />
+              <input
+                class="search__input search__input_primary"
+                type="text"
+                placeholder="Куда вы собираетесь?"
+              />
+            </div>
             <button class="button button_primary button_light">Найти</button>
           </div>
-          </div>
-        </section>
-        <section class="section section_city-photos">
-          <div class="section-wrapper section-wrapper_city-photos">
-            <div class="city-photos">
-              <img class="city-photo" src="./image/photo7.png" alt="Фото 1" />
-              <img class="city-photo" src="./image/photo8.png" alt="Фото 2" />
-              <img class="city-photo" src="./image/photo9.png" alt="Фото 3" />
-              <img class="city-photo" src="./image/photo10.png" alt="Фото 4" />
-              <div class="photo-wrapper">
-                <img class="city-photo" src="./image/photo11.png" alt="Фото 5" />
-                <a href="#" class="city-photo__link photo-link">
-                  <img src="./image/img-icon.svg" alt="img">
-                  +10
-                </a>
-                <a href="#" class="city-photo__link video-link">
-                  <img src="./image/play-icon.svg" alt="play">
-                  Видео об&nbsp;экскурсии
-                </a>
-              </div>
-            </div>
-            <div class="city-photos__gallery city-photos-swiper swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img class="city-photo" src="./image/photo7.png" alt="Фото 1" />
-                </div>
-                <div class="swiper-slide">
-                  <img class="city-photo" src="./image/photo8.png" alt="Фото 2" />
-                </div>
-                <div class="swiper-slide">
-                  <img class="city-photo" src="./image/photo9.png" alt="Фото 3" />
-                </div>
-                <div class="swiper-slide">
-                  <img class="city-photo" src="./image/photo10.png" alt="Фото 4" />
-                </div>
-              </div>
-              <a href="#" class="city-photo__link video-link video-link_primary">
-                <img src="./image/play-icon.svg" alt="play">
+        </div>
+      </section>
+      <section class="section section_city-photos">
+        <div class="section-wrapper section-wrapper_city-photos">
+          <div class="city-photos">
+            <img class="city-photo" src="./image/photo7.png" alt="Фото 1" />
+            <img class="city-photo" src="./image/photo8.png" alt="Фото 2" />
+            <img class="city-photo" src="./image/photo9.png" alt="Фото 3" />
+            <img class="city-photo" src="./image/photo10.png" alt="Фото 4" />
+            <div class="photo-wrapper">
+              <img class="city-photo" src="./image/photo11.png" alt="Фото 5" />
+              <a href="#" class="city-photo__link photo-link">
+                <img src="./image/img-icon.svg" alt="img" />
+                +10
+              </a>
+              <a href="#" class="city-photo__link video-link">
+                <img src="./image/play-icon.svg" alt="play" />
                 Видео об&nbsp;экскурсии
               </a>
             </div>
-            <div class="city-photos__controls">
-              <div class="city-photos__control swiper-button-prev"></div>
-              <div class="city-photos__control swiper-button-next"></div>
+          </div>
+          <div class="city-photos__gallery city-photos-swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="city-photo" src="./image/photo7.png" alt="Фото 1" />
+              </div>
+              <div class="swiper-slide">
+                <img class="city-photo" src="./image/photo8.png" alt="Фото 2" />
+              </div>
+              <div class="swiper-slide">
+                <img class="city-photo" src="./image/photo9.png" alt="Фото 3" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="city-photo"
+                  src="./image/photo10.png"
+                  alt="Фото 4"
+                />
+              </div>
             </div>
+            <a href="#" class="city-photo__link video-link video-link_primary">
+              <img src="./image/play-icon.svg" alt="play" />
+              Видео об&nbsp;экскурсии
+            </a>
+          </div>
+          <div class="city-photos__controls">
+            <div class="city-photos__control swiper-button-prev"></div>
+            <div class="city-photos__control swiper-button-next"></div>
           </div>
         </div>
-        </section>
-        <section class="section section_info">
-          <div class="section-wrapper">
-            <div>
-              <div class="section_info__content">
-                <span class="tag">
-                  <img src="./image/tag-icon.svg">
+      </section>
+      <section class="section section_info">
+        <div class="section-wrapper">
+          <div>
+            <div class="section_info__content">
+              <span class="tag">
+                <img src="./image/tag-icon.svg" />
                 Израиль, Тель-Авив
-                </span>
-                <h1 class="product-page__title">Квест-экскурсия по&nbsp;<span class="section__title_primary">Тель-Авиву</span></h1>
-                <p class="section__text section__text-info">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
-                <p class="section__text section__text-info">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour.</p>
-                <button class="button button_more" id="button-more">
-                  <img src="./image/plus-icon.svg" alt="+">
-                  <img src="./image/minus-icon.svg" alt="-">
-                  <span id="button-text">Узнать больше</span>
-                </button>
+              </span>
+              <h1 class="product-page__title">
+                Квест-экскурсия по&nbsp;<span class="section__title_primary"
+                  >Тель-Авиву</span
+                >
+              </h1>
+              <p class="section__text section__text-info">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi sint occaecati cupiditate
+                non provident, similique sunt in culpa qui officia deserunt
+                mollitia animi, id est laborum et dolorum fuga.
+              </p>
+              <p class="section__text section__text-info">
+                On the other hand, we denounce with righteous indignation and
+                dislike men who are so beguiled and demoralized by the charms of
+                pleasure of the moment, so blinded by desire, that they cannot
+                foresee the pain and trouble that are bound to ensue; and equal
+                blame belongs to those who fail in their duty through weakness
+                of will, which is the same as saying through shrinking from toil
+                and pain. These cases are perfectly simple and easy to
+                distinguish. In a free hour.
+              </p>
+              <div class="audio">
+                <span class="audio__title">Послушать аудио</span>
+                <audio
+                  controls
+                  src="https://cdn.freesound.org/previews/796/796418_1648170-lq.mp3"
+                ></audio>
               </div>
-              <section class="section section_additional-info" id="additional-info">
-                <div class="section-wrapper">
-                  <h2 class="section__title">Что вас <span class="section__title_primary">ожидает</span></h2>
-                  <div class="info-card">
-                    <h3 class="info-card__title">О приключении</h3>
-                    <p class="section__text section__text-info">На экскурсии вы услышите то, что точно не найти в интернете. Все о строительстве комплекса и том, как устроены небоскребы снаружи и внутри и как они функционируют. Вы узнаете, как выглядела эта территория раньше, каким должен был быть комплекс, когда его проектировали, и что пошло не по плану.</p>
-                    <p class="section__text section__text-info">Посмотрим, как будет выглядеть Москва-Сити в окончательном варианте и как будет развиваться пространство вокруг. Поговорим и об особенностях каждой башни: в каких архитектурных стилях построены башни, какие мировые рекорды установили при строительстве, какие современные инновации были использованы и насколько башни Сити похожи на небоскребы, которые строятся в мире и чем отличаются.</p>
-                  </div>
-                  <div class="info-card">
-                    <h3 class="info-card__title">В приключение включено</h3>
-                    <p class="section__text section__text-info">Мы обойдем абсолютно все небоскребы. Половину экскурсии мы проведем внутри башен. Заглянем в подземные переходы, увидим современные арт объекты. Вы узнаете, почему макет башни Татлина установили в Городе Столиц, в какой башне на высоте 61 этажа находится бассейн, какое участие принимал в строительстве комплекса самаркандский художник Юнус Сафардиар и многое другое. А еще вы узнаете, кто покупает апартаменты в Москва-Сити и как здесь живется.</p>
-                  </div>
-                  <div class="info-card">
-                    <h3 class="info-card__title">Место встречи</h3>
-                    <p class="section__text section__text-info">Начало экскурсии у моста Багратион. Точное место встречи вы узнаете сразу после бронирования.</p>
-                  </div>
-                  <div class="info-card">
-                    <h3 class="info-card__title">Полезные подсказки</h3>
-                    <ul class="info-card__list">
-                      <li class="info-card__item info-card__item_checked">Прогулочный тур</li>
-                      <li class="info-card__item info-card__item_checked">Туристический гид</li>
-                      <li class="info-card__item">Еда или напитки</li>
-                    </ul>
-                  </div>
-                </div>
-              </section>
+              <button class="button button_more" id="button-more">
+                <img src="./image/plus-icon.svg" alt="+" />
+                <img src="./image/minus-icon.svg" alt="-" />
+                <span id="button-text">Узнать больше</span>
+              </button>
             </div>
-            <div class="section_info__form">
-              <div class="form__header">
-                <h5 class="form__title">Об экскурсии</h5>
-                <span class="form__rating">4.95</span>
+            <section
+              class="section section_additional-info"
+              id="additional-info"
+            >
+              <div class="section-wrapper">
+                <h2 class="section__title">
+                  Что вас <span class="section__title_primary">ожидает</span>
+                </h2>
+                <div class="info-card">
+                  <h3 class="info-card__title">О приключении</h3>
+                  <p class="section__text section__text-info">
+                    На экскурсии вы услышите то, что точно не найти в интернете.
+                    Все о строительстве комплекса и том, как устроены небоскребы
+                    снаружи и внутри и как они функционируют. Вы узнаете, как
+                    выглядела эта территория раньше, каким должен был быть
+                    комплекс, когда его проектировали, и что пошло не по плану.
+                  </p>
+                  <p class="section__text section__text-info">
+                    Посмотрим, как будет выглядеть Москва-Сити в окончательном
+                    варианте и как будет развиваться пространство вокруг.
+                    Поговорим и об особенностях каждой башни: в каких
+                    архитектурных стилях построены башни, какие мировые рекорды
+                    установили при строительстве, какие современные инновации
+                    были использованы и насколько башни Сити похожи
+                    на небоскребы, которые строятся в мире и чем отличаются.
+                  </p>
+                </div>
+                <div class="info-card">
+                  <h3 class="info-card__title">В приключение включено</h3>
+                  <p class="section__text section__text-info">
+                    Мы обойдем абсолютно все небоскребы. Половину экскурсии
+                    мы проведем внутри башен. Заглянем в подземные переходы,
+                    увидим современные арт объекты. Вы узнаете, почему макет
+                    башни Татлина установили в Городе Столиц, в какой башне
+                    на высоте 61 этажа находится бассейн, какое участие принимал
+                    в строительстве комплекса самаркандский художник Юнус
+                    Сафардиар и многое другое. А еще вы узнаете, кто покупает
+                    апартаменты в Москва-Сити и как здесь живется.
+                  </p>
+                </div>
+                <div class="info-card">
+                  <h3 class="info-card__title">Место встречи</h3>
+                  <p class="section__text section__text-info">
+                    Начало экскурсии у моста Багратион. Точное место встречи вы
+                    узнаете сразу после бронирования.
+                  </p>
+                </div>
+                <div class="info-card">
+                  <h3 class="info-card__title">Полезные подсказки</h3>
+                  <ul class="info-card__list">
+                    <li class="info-card__item info-card__item_checked">
+                      Прогулочный тур
+                    </li>
+                    <li class="info-card__item info-card__item_checked">
+                      Туристический гид
+                    </li>
+                    <li class="info-card__item">Еда или напитки</li>
+                  </ul>
+                </div>
               </div>
-              <form class="booking-form" id="booking-form">
-                <div class="form__content">
-                  <label class="form__label" for="location">Локация</label>
-                  <span class="form__info">
-                    <input type="hidden" name="place" value="museum" />
-                    Музей
-                  </span>                  
-                  <label class="form__label" for="duration">Длительность</label>
-                  <input class="form__input" type="text" name="duration" id="duration" placeholder="Ваш ответ">
-                  <label class="form__label" for="audience">Для кого</label>
-                  <span class="form__info">
-                    <input type="hidden" name="group" value="adults" />
-                    Взрослые
-                  </span>  
-                  <label class="form__label" for="format">Формат</label>
-                  <span class="form__info">
-                    <input type="hidden" name="format" value="individual" />
-                    Индивидуальная
-                  </span>  
-                  <label class="form__label" for="quantity">Кол-во участников</label>
-                  <input class="form__input" type="text" name="quantity" id="quantity" placeholder="Ваш ответ">
-                  <label class="form__label" for="languages">Языки</label>
-                  <input class="form__input" type="text" name="languages" id="languages" placeholder="Ваш ответ">
-                  <span class="form__label">От гида</span>
-                  <span class="form__label">-</span>
-                </div>
-                <div class="form__price">
-                  <span>Стоимость за группу/человека</span>
-                  <span>80€/20€</span>
-                </div>
-                <button class="button button_secondary button_max-width">Забронировать</button>
-              </form>
-            </div>
+            </section>
           </div>
-        </section>
-        <section class="section section_guide">
-          <div class="section-wrapper">
-            <div class="guide-card">
-              <img class="guide-card__img" src="./image/guide.png" alt="Юлия Александрова">
-              <div class="guide-card__content">
-                <div class="guide-card__header">
+          <div class="section_info__form">
+            <div class="form__header">
+              <h5 class="form__title">Об экскурсии</h5>
+              <span class="form__rating">4.95</span>
+            </div>
+            <form class="booking-form" id="booking-form">
+              <div class="form__content">
+                <label class="form__label" for="location">Локация</label>
+                <span class="form__info">
+                  <input type="hidden" name="place" value="museum" />
+                  Музей
+                </span>
+                <label class="form__label" for="duration">Длительность</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  name="duration"
+                  id="duration"
+                  placeholder="Ваш ответ"
+                />
+                <label class="form__label" for="audience">Для кого</label>
+                <span class="form__info">
+                  <input type="hidden" name="group" value="adults" />
+                  Взрослые
+                </span>
+                <label class="form__label" for="format">Формат</label>
+                <span class="form__info">
+                  <input type="hidden" name="format" value="individual" />
+                  Индивидуальная
+                </span>
+                <label class="form__label" for="quantity"
+                  >Кол-во участников</label
+                >
+                <input
+                  class="form__input"
+                  type="text"
+                  name="quantity"
+                  id="quantity"
+                  placeholder="Ваш ответ"
+                />
+                <label class="form__label" for="languages">Языки</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  name="languages"
+                  id="languages"
+                  placeholder="Ваш ответ"
+                />
+                <span class="form__label">От гида</span>
+                <span class="form__label">-</span>
+              </div>
+              <div class="form__price">
+                <span>Стоимость за группу/человека</span>
+                <span>80€/20€</span>
+              </div>
+              <button class="button button_secondary button_max-width">
+                Забронировать
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="section section_guide">
+        <div class="section-wrapper">
+          <div class="guide-card">
+            <img
+              class="guide-card__img"
+              src="./image/guide.png"
+              alt="Юлия Александрова"
+            />
+            <div class="guide-card__content">
+              <div class="guide-card__header">
                 <div class="guide-card__name">
                   <h3 class="guide-card__title">Юлия Александрова</h3>
-                  <span class="guide-card__subtitle">гид по Тель-Авиву, автор экскурсии</span>
+                  <span class="guide-card__subtitle"
+                    >гид по Тель-Авиву, автор экскурсии</span
+                  >
                 </div>
                 <div class="guide-card__rating">
                   <span>
-                    <img src="./image/star-icon.svg" alt="star">
+                    <img src="./image/star-icon.svg" alt="star" />
                     4.9
                   </span>
                   <span>рейтинг гида на whatiftour</span>
                 </div>
               </div>
-              <p class="section__text">Меня зовут Юлия, я историк искусства с дипломом МГУ и лицензированный гид. Я живу в Москве более 15 лет и очень люблю московскую архитектуру. С огромным уважением отношусь к пространству города, знаю практически все о развитии московских архитектурных стилей. Постоянно открываю для себя новое об истории города, его жителях, малоизвестных фактах и с удовольствием вам все это расскажу. Приходите на мои экскурсии — будет очень много увлекательной информации.</p>
+              <p class="section__text">
+                Меня зовут Юлия, я историк искусства с дипломом МГУ
+                и лицензированный гид. Я живу в Москве более 15 лет и очень
+                люблю московскую архитектуру. С огромным уважением отношусь
+                к пространству города, знаю практически все о развитии
+                московских архитектурных стилей. Постоянно открываю для себя
+                новое об истории города, его жителях, малоизвестных фактах
+                и с удовольствием вам все это расскажу. Приходите на мои
+                экскурсии — будет очень много увлекательной информации.
+              </p>
               <div class="guide-card__footer">
-                <a class="guide-card__link guide-card__link_transparent" href="#">Все экскурсии автора</a>
-                <a class="guide-card__link guide-card__link_primary" href="#">Задать вопрос гиду</a>
-              </div>  
-            </div>
-              
-
-            </div>
-            
-          </div>
-        </section>
-        <section class="section section_product-feedback">
-          <div class="section-wrapper">
-            <div class="product-feedback__header">
-              <div class="product-feedback__title">
-                <h2 class="section__title">Отзывы <span class="section__title_primary">клиентов</span></h2>
-                <p class="section__text">Отзывы наших клиентов о квест-экскурсиях, наших экскурсоводах. Спасибо, что делитесь своими впечатлениями. Если вы еще не оставили свой отзыв, вы можете это сделать, нажав кнопку ниже.</p>
+                <a
+                  class="guide-card__link guide-card__link_transparent"
+                  href="#"
+                  >Все экскурсии автора</a
+                >
+                <a class="guide-card__link guide-card__link_primary" href="#"
+                  >Задать вопрос гиду</a
+                >
               </div>
-              <button class="button button_transparent" id="feedback-open-button">Оставить отзыв</button>
-            </div>
-            <div class="product-feedback__card">
-              <div class="product-feedback__rating product-feedback__rating_5">
-                <svg width="16" height="15" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"/>
-                </svg>
-                <svg width="16" height="15" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"/>
-                </svg>
-                <svg width="16" height="15" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"/>
-                </svg>
-                <svg width="16" height="15" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"/>
-                </svg>
-                <svg width="16" height="15" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"/>
-                </svg>
-              </div>
-              <div class="product-feedback__user">
-                <img class="product-feedback__image" src="./image/feedback.png" alt="Иван Н.">
-                <span class="product-feedback__name">Иван Н.</span>
-              </div>
-              <p class="product-feedback__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
-            </div>
-            <div class="product-feedback__card">
-              <div class="product-feedback__rating product-feedback__rating_3">
-                <svg width="16" height="15" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"/>
-                </svg>
-                <svg width="16" height="15" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"/>
-                </svg>
-                <svg width="16" height="15" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"/>
-                </svg>
-                <svg width="16" height="15" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"/>
-                </svg>
-                <svg width="16" height="15" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"/>
-                </svg>
-              </div>
-              <div class="product-feedback__user">
-                <img class="product-feedback__image" src="./image/feedback.png" alt="Иван Н.">
-                <span class="product-feedback__name">Иван Н.</span>
-              </div>
-              <p class="product-feedback__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
-            </div>
-            <div class="product-feedback__card">
-              <div class="product-feedback__rating product-feedback__rating_4">
-                <svg width="16" height="15" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"/>
-                </svg>
-                <svg width="16" height="15" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"/>
-                </svg>
-                <svg width="16" height="15" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"/>
-                </svg>
-                <svg width="16" height="15" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"/>
-                </svg>
-                <svg width="16" height="15" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"/>
-                </svg>
-              </div>
-              <div class="product-feedback__user">
-                <img class="product-feedback__image" src="./image/feedback.png" alt="Иван Н.">
-                <span class="product-feedback__name">Иван Н.</span>
-              </div>
-              <p class="product-feedback__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
-            </div>
-            <a class="button button_secondary button_max-width">Посмотреть больше отзывов</a>
-          </div>
-        </section>
-        <section class="section section_offers">
-          <div class="offers__header">
-            <div class="section-wrapper">
-              <h2 class="section__title section__title_white">Еще не решились?</h2>
-              <span class="offers__subtitle">Посмотрите другие квест-экскурсии в <a href="#">городе.</a></span>
-            </div>
-          </div>
-          <div class="section-wrapper">
-            <div class="offer-cards">
-              <div class="offer-card">
-                <a href="#">
-                  <img class="offer-card__image" src="./image/Moscow.png" alt="СПб">
-                </a>
-                  <span class="offer-card__text">Групповой квест</span>
-                <h4 class="offer-card__title"><a href="#">Неизвестная Москва</a></h4>
-                <span class="offer-card__text">3 часа</span>
-                <span class="offer-card__text">От 20€ за 1 человека</span>
-                <span class="offer-card__rating">4.9</span>
-              </div>
-              <div class="offer-card">
-                <a href="#">
-                  <img class="offer-card__image" src="./image/SPb.png" alt="СПб">
-                </a>
-                  <span class="offer-card__text">Групповой квест</span>
-                <h4 class="offer-card__title"><a href="#">Неизвестная Москва</a></h4>
-                <span class="offer-card__text">3 часа</span>
-                <span class="offer-card__text">От 20€ за 1 человека</span>
-                <span class="offer-card__rating">4.9</span>
-              </div>
-              <div class="offer-card">
-                <a href="#">
-                  <img class="offer-card__image" src="./image/TelAviv.png" alt="СПб">
-                </a>
-                  <span class="offer-card__text">Групповой квест</span>
-                <h4 class="offer-card__title"><a href="#">Неизвестная Москва</a></h4>
-                <span class="offer-card__text">3 часа</span>
-                <span class="offer-card__text">От 20€ за 1 человека</span>
-                <span class="offer-card__rating">4.9</span>
-              </div>
-              <div class="offer-card">
-                <a href="#">
-                  <img class="offer-card__image" src="./image/Barcelona.png" alt="СПб">
-                </a>
-                  <span class="offer-card__text">Групповой квест</span>
-                <h4 class="offer-card__title"><a href="#">Неизвестная Москва</a></h4>
-                <span class="offer-card__text">3 часа</span>
-                <span class="offer-card__text">От 20€ за 1 человека</span>
-                <span class="offer-card__rating">4.9</span>
-              </div>
-            </div>
-          </div>
-
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="footer-wrapper">
-          <a class="link-up" href="#top">
-            <img class="link-up__image" src="./image/arrow_up.svg" />
-            Наверх
-          </a>
-          <div class="footer__content">
-            <div class="social-wrapper">
-              <a class="social-link social-link_telegram" href=""></a>
-              <a class="social-link social-link_insta" href=""></a>
-              <a class="social-link social-link_whatsapp" href=""></a>
-            </div>
-            <nav class="footer__nav">
-              <ul class="nav__list">
-                <li class="nav__list-item">
-                  <a class="nav__link" href="#">Выбрать квест</a>
-                </li>
-                <li class="nav__list-item">
-                  <a class="nav__link" href="#">Что такое квесты</a>
-                </li>
-                <li class="nav__list-item">
-                  <a class="nav__link" href="#">Блог</a>
-                </li>
-              </ul>
-              <ul class="nav__list">
-                <li class="nav__list-item">
-                  <a class="nav__link" href="#">Отзывы</a>
-                </li>
-                <li class="nav__list-item">
-                  <a class="nav__link" href="#">Живые квесты</a>
-                </li>
-              </ul>
-              <ul class="nav__list">
-                <li class="nav__list-item">
-                  <a class="nav__link" href="#">Printable квесты</a>
-                </li>
-                <li class="nav__list-item">
-                  <a class="nav__link" href="#">Квест-приложения</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="footer__docs">
-              <ul class="docs-list">
-                <li class="docs-list__item">
-                  <a class="docs-list__link" href="#"
-                    >Политика конфиденциальности</a
-                  >
-                </li>
-                <li class="docs-list__item">
-                  <a class="docs-list__link" href="#">Договор оферта</a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
-      </footer>
-      <dialog class="modal modal_feedback" id="feedback-modal">
-        <button class="button button_close" id="feedback-close-button"></button>
-        <h3 class="modal_feedback__title">Оставить отзыв</h3>
-        <form class="feedback-form" id="feedback-form">
-          <div class="feedback-form__rating-wrapper" id="feedback-form-rating">
-            <label for="rating-1" class="feedback-form__rating-label">
-              <input type="radio" class="feedback-form__rating" name="rating" id="rating-1" value="1">
-            </label>            
-            <label for="rating-2" class="feedback-form__rating-label">
-              <input type="radio" class="feedback-form__rating" name="rating" id="rating-2" value="2">
-            </label>
-            <label for="rating-3" class="feedback-form__rating-label">
-              <input type="radio" class="feedback-form__rating" name="rating" id="rating-3" value="3">
-            </label>
-            <label for="rating-4" class="feedback-form__rating-label">
-              <input type="radio" class="feedback-form__rating" name="rating" id="rating-4" value="4">
-            </label>
-            <label for="rating-5" class="feedback-form__rating-label">
-              <input type="radio" class="feedback-form__rating" name="rating" id="rating-5" value="5">
-            </label>        
-          </div>          
-          <textarea name="feedback" id="feedback-form-text" class="feedback-form__text" placeholder="Напишите свой отзыв" required></textarea>
-          <label for="image" class="feedback-form__image">
-            <span class="label-header">
-              <img src="./image/camera-icon.svg">
-              Добавить фото
-            </span>
-            <input type="file" class="feedback-form__file" accept="image/*" name="image" multiple>
-            <ul class="feedback-form__uploaded-files"></ul>
-          </label>          
-          <button type="submit" class="button button_secondary" id="feedback-submit">Отправить отзыв</button>
-        </form>
-      </dialog> 
-      <dialog class="modal modal_booking" id="booking-modal-individual">
-        <button class="button button_close"></button>
-        <h3 class="modal_booking__title">Заказать квест-экскурсию</h3>
-        <p class="modal_booking__text">Заполните форму, чтобы забронировать квест-экскурсию</p>
-        <img src="./image/photo1.png" alt="Купить квест-экскурсию">
-        <form class="modal_booking__form">
-          <input type="text" class="form__input form__input_primary" name="name" placeholder="Имя">
-          <input type="text" class="form__input form__input_primary" name="phone" placeholder="Телефон">
-          <input type="text" class="form__input form__input_primary" name="email" placeholder="Электронная почта">
-          <input type="text" class="form__input form__input_primary" name="participants" placeholder="Кол-во участников">
-          <input type="text" class="form__input form__input_primary" name="comments" placeholder="Комментарии">
-          <button type="submit" class="button button_secondary button_max-width">Забронировать</button>
-        </form>
-      </dialog> 
-      <dialog class="modal modal_booking" id="booking-modal-group">
-        <button class="button button_close"></button>
-        <h3 class="modal_booking__title">Забронировать квест-экскурсию</h3>
-        <p class="modal_booking__text">Заполните форму, чтобы забронировать квест-экскурсию</p>
-        <div class="modal_booking__calendar" id="calendar"></div>
-        <form class="modal_booking__form">
-          <input type="hidden" name="date" id="date-hidden-input">
-          <input type="text" class="form__input form__input_primary" name="name" placeholder="Имя">
-          <input type="text" class="form__input form__input_primary" name="phone" placeholder="Телефон">
-          <input type="text" class="form__input form__input_primary" name="email" placeholder="Электронная почта">
-          <input type="text" class="form__input form__input_primary" name="participants" placeholder="Кол-во участников">
-          <input type="text" class="form__input form__input_primary" name="comments" placeholder="Комментарии">
-          <button type="submit" class="button button_secondary button_max-width">Забронировать</button>
-        </form>
-      </dialog> 
-      <dialog class="modal modal_booking" id="booking-modal-printable">
-        <button class="button button_close"></button>
-        <h3 class="modal_booking__title">Купить квест-экскурсию</h3>
-        <img src="./image/photo1.png" alt="Купить квест-экскурсию">
-        <a href="/" class="button button_secondary button_max-width">Купить</a>
-      </dialog> 
-      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.3/air-datepicker.min.js"></script>
-      <script src="./script/customSelect.js"></script>
-      <script src="./script/selectData.js"></script>
-      <script src="./script/script.js"></script>
-      <script src="./script/product.js"></script>
-    </body>
-  </html>
+      </section>
+      <section class="section section_product-feedback">
+        <div class="section-wrapper">
+          <div class="product-feedback__header">
+            <div class="product-feedback__title">
+              <h2 class="section__title">
+                Отзывы <span class="section__title_primary">клиентов</span>
+              </h2>
+              <p class="section__text">
+                Отзывы наших клиентов о квест-экскурсиях, наших экскурсоводах.
+                Спасибо, что делитесь своими впечатлениями. Если вы еще не
+                оставили свой отзыв, вы можете это сделать, нажав кнопку ниже.
+              </p>
+            </div>
+            <button class="button button_transparent" id="feedback-open-button">
+              Оставить отзыв
+            </button>
+          </div>
+          <div class="product-feedback__card">
+            <div class="product-feedback__rating product-feedback__rating_5">
+              <svg
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                />
+              </svg>
+            </div>
+            <div class="product-feedback__user">
+              <img
+                class="product-feedback__image"
+                src="./image/feedback.png"
+                alt="Иван Н."
+              />
+              <span class="product-feedback__name">Иван Н.</span>
+            </div>
+            <p class="product-feedback__text">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti atque corrupti quos
+              dolores et quas molestias excepturi sint occaecati cupiditate non
+              provident, similique sunt in culpa qui officia deserunt mollitia
+              animi, id est laborum et dolorum fuga. Et harum quidem rerum
+              facilis est et expedita distinctio. Nam libero tempore, cum soluta
+              nobis est eligendi optio cumque nihil impedit quo minus id quod
+              maxime placeat facere possimus, omnis voluptas assumenda est,
+              omnis dolor repellendus.
+            </p>
+          </div>
+          <div class="product-feedback__card">
+            <div class="product-feedback__rating product-feedback__rating_3">
+              <svg
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                />
+              </svg>
+            </div>
+            <div class="product-feedback__user">
+              <img
+                class="product-feedback__image"
+                src="./image/feedback.png"
+                alt="Иван Н."
+              />
+              <span class="product-feedback__name">Иван Н.</span>
+            </div>
+            <p class="product-feedback__text">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti atque corrupti quos
+              dolores et quas molestias excepturi sint occaecati cupiditate non
+              provident, similique sunt in culpa qui officia deserunt mollitia
+              animi, id est laborum et dolorum fuga. Et harum quidem rerum
+              facilis est et expedita distinctio. Nam libero tempore, cum soluta
+              nobis est eligendi optio cumque nihil impedit quo minus id quod
+              maxime placeat facere possimus, omnis voluptas assumenda est,
+              omnis dolor repellendus.
+            </p>
+          </div>
+          <div class="product-feedback__card">
+            <div class="product-feedback__rating product-feedback__rating_4">
+              <svg
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                />
+              </svg>
+              <svg
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z"
+                />
+              </svg>
+            </div>
+            <div class="product-feedback__user">
+              <img
+                class="product-feedback__image"
+                src="./image/feedback.png"
+                alt="Иван Н."
+              />
+              <span class="product-feedback__name">Иван Н.</span>
+            </div>
+            <p class="product-feedback__text">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti atque corrupti quos
+              dolores et quas molestias excepturi sint occaecati cupiditate non
+              provident, similique sunt in culpa qui officia deserunt mollitia
+              animi, id est laborum et dolorum fuga. Et harum quidem rerum
+              facilis est et expedita distinctio. Nam libero tempore, cum soluta
+              nobis est eligendi optio cumque nihil impedit quo minus id quod
+              maxime placeat facere possimus, omnis voluptas assumenda est,
+              omnis dolor repellendus.
+            </p>
+          </div>
+          <a class="button button_secondary button_max-width"
+            >Посмотреть больше отзывов</a
+          >
+        </div>
+      </section>
+      <section class="section section_offers">
+        <div class="offers__header">
+          <div class="section-wrapper">
+            <h2 class="section__title section__title_white">
+              Еще не решились?
+            </h2>
+            <span class="offers__subtitle"
+              >Посмотрите другие квест-экскурсии в <a href="#">городе.</a></span
+            >
+          </div>
+        </div>
+        <div class="section-wrapper">
+          <div class="offer-cards">
+            <div class="offer-card">
+              <a href="#">
+                <img
+                  class="offer-card__image"
+                  src="./image/Moscow.png"
+                  alt="СПб"
+                />
+              </a>
+              <span class="offer-card__text">Групповой квест</span>
+              <h4 class="offer-card__title">
+                <a href="#">Неизвестная Москва</a>
+              </h4>
+              <span class="offer-card__text">3 часа</span>
+              <span class="offer-card__text">От 20€ за 1 человека</span>
+              <span class="offer-card__rating">4.9</span>
+            </div>
+            <div class="offer-card">
+              <a href="#">
+                <img
+                  class="offer-card__image"
+                  src="./image/SPb.png"
+                  alt="СПб"
+                />
+              </a>
+              <span class="offer-card__text">Групповой квест</span>
+              <h4 class="offer-card__title">
+                <a href="#">Неизвестная Москва</a>
+              </h4>
+              <span class="offer-card__text">3 часа</span>
+              <span class="offer-card__text">От 20€ за 1 человека</span>
+              <span class="offer-card__rating">4.9</span>
+            </div>
+            <div class="offer-card">
+              <a href="#">
+                <img
+                  class="offer-card__image"
+                  src="./image/TelAviv.png"
+                  alt="СПб"
+                />
+              </a>
+              <span class="offer-card__text">Групповой квест</span>
+              <h4 class="offer-card__title">
+                <a href="#">Неизвестная Москва</a>
+              </h4>
+              <span class="offer-card__text">3 часа</span>
+              <span class="offer-card__text">От 20€ за 1 человека</span>
+              <span class="offer-card__rating">4.9</span>
+            </div>
+            <div class="offer-card">
+              <a href="#">
+                <img
+                  class="offer-card__image"
+                  src="./image/Barcelona.png"
+                  alt="СПб"
+                />
+              </a>
+              <span class="offer-card__text">Групповой квест</span>
+              <h4 class="offer-card__title">
+                <a href="#">Неизвестная Москва</a>
+              </h4>
+              <span class="offer-card__text">3 часа</span>
+              <span class="offer-card__text">От 20€ за 1 человека</span>
+              <span class="offer-card__rating">4.9</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <a class="link-up" href="#top">
+          <img class="link-up__image" src="./image/arrow_up.svg" />
+          Наверх
+        </a>
+        <div class="footer__content">
+          <div class="social-wrapper">
+            <a class="social-link social-link_telegram" href=""></a>
+            <a class="social-link social-link_insta" href=""></a>
+            <a class="social-link social-link_whatsapp" href=""></a>
+          </div>
+          <nav class="footer__nav">
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Выбрать квест</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Что такое квесты</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Блог</a>
+              </li>
+            </ul>
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Отзывы</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Живые квесты</a>
+              </li>
+            </ul>
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Printable квесты</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__link" href="#">Квест-приложения</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__docs">
+            <ul class="docs-list">
+              <li class="docs-list__item">
+                <a class="docs-list__link" href="#"
+                  >Политика конфиденциальности</a
+                >
+              </li>
+              <li class="docs-list__item">
+                <a class="docs-list__link" href="#">Договор оферта</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <dialog class="modal modal_feedback" id="feedback-modal">
+      <button class="button button_close" id="feedback-close-button"></button>
+      <h3 class="modal_feedback__title">Оставить отзыв</h3>
+      <form class="feedback-form" id="feedback-form">
+        <div class="feedback-form__rating-wrapper" id="feedback-form-rating">
+          <label for="rating-1" class="feedback-form__rating-label">
+            <input
+              type="radio"
+              class="feedback-form__rating"
+              name="rating"
+              id="rating-1"
+              value="1"
+            />
+          </label>
+          <label for="rating-2" class="feedback-form__rating-label">
+            <input
+              type="radio"
+              class="feedback-form__rating"
+              name="rating"
+              id="rating-2"
+              value="2"
+            />
+          </label>
+          <label for="rating-3" class="feedback-form__rating-label">
+            <input
+              type="radio"
+              class="feedback-form__rating"
+              name="rating"
+              id="rating-3"
+              value="3"
+            />
+          </label>
+          <label for="rating-4" class="feedback-form__rating-label">
+            <input
+              type="radio"
+              class="feedback-form__rating"
+              name="rating"
+              id="rating-4"
+              value="4"
+            />
+          </label>
+          <label for="rating-5" class="feedback-form__rating-label">
+            <input
+              type="radio"
+              class="feedback-form__rating"
+              name="rating"
+              id="rating-5"
+              value="5"
+            />
+          </label>
+        </div>
+        <textarea
+          name="feedback"
+          id="feedback-form-text"
+          class="feedback-form__text"
+          placeholder="Напишите свой отзыв"
+          required
+        ></textarea>
+        <label for="image" class="feedback-form__image">
+          <span class="label-header">
+            <img src="./image/camera-icon.svg" />
+            Добавить фото
+          </span>
+          <input
+            type="file"
+            class="feedback-form__file"
+            accept="image/*"
+            name="image"
+            multiple
+          />
+          <ul class="feedback-form__uploaded-files"></ul>
+        </label>
+        <button
+          type="submit"
+          class="button button_secondary"
+          id="feedback-submit"
+        >
+          Отправить отзыв
+        </button>
+      </form>
+    </dialog>
+    <dialog class="modal modal_booking" id="booking-modal-individual">
+      <button class="button button_close"></button>
+      <h3 class="modal_booking__title">Заказать квест-экскурсию</h3>
+      <p class="modal_booking__text">
+        Заполните форму, чтобы забронировать квест-экскурсию
+      </p>
+      <img src="./image/photo1.png" alt="Купить квест-экскурсию" />
+      <form class="modal_booking__form">
+        <input
+          type="text"
+          class="form__input form__input_primary"
+          name="name"
+          placeholder="Имя"
+        />
+        <input
+          type="text"
+          class="form__input form__input_primary"
+          name="phone"
+          placeholder="Телефон"
+        />
+        <input
+          type="text"
+          class="form__input form__input_primary"
+          name="email"
+          placeholder="Электронная почта"
+        />
+        <input
+          type="text"
+          class="form__input form__input_primary"
+          name="participants"
+          placeholder="Кол-во участников"
+        />
+        <input
+          type="text"
+          class="form__input form__input_primary"
+          name="comments"
+          placeholder="Комментарии"
+        />
+        <button type="submit" class="button button_secondary button_max-width">
+          Забронировать
+        </button>
+      </form>
+    </dialog>
+    <dialog class="modal modal_booking" id="booking-modal-group">
+      <button class="button button_close"></button>
+      <h3 class="modal_booking__title">Забронировать квест-экскурсию</h3>
+      <p class="modal_booking__text">
+        Заполните форму, чтобы забронировать квест-экскурсию
+      </p>
+      <div class="modal_booking__calendar" id="calendar"></div>
+      <form class="modal_booking__form">
+        <input type="hidden" name="date" id="date-hidden-input" />
+        <input
+          type="text"
+          class="form__input form__input_primary"
+          name="name"
+          placeholder="Имя"
+        />
+        <input
+          type="text"
+          class="form__input form__input_primary"
+          name="phone"
+          placeholder="Телефон"
+        />
+        <input
+          type="text"
+          class="form__input form__input_primary"
+          name="email"
+          placeholder="Электронная почта"
+        />
+        <input
+          type="text"
+          class="form__input form__input_primary"
+          name="participants"
+          placeholder="Кол-во участников"
+        />
+        <input
+          type="text"
+          class="form__input form__input_primary"
+          name="comments"
+          placeholder="Комментарии"
+        />
+        <button type="submit" class="button button_secondary button_max-width">
+          Забронировать
+        </button>
+      </form>
+    </dialog>
+    <dialog class="modal modal_booking" id="booking-modal-printable">
+      <button class="button button_close"></button>
+      <h3 class="modal_booking__title">Купить квест-экскурсию</h3>
+      <img src="./image/photo1.png" alt="Купить квест-экскурсию" />
+      <a href="/" class="button button_secondary button_max-width">Купить</a>
+    </dialog>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.3/air-datepicker.min.js"></script>
+    <script src="./script/customSelect.js"></script>
+    <script src="./script/selectData.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/product.js"></script>
+  </body>
+</html>
